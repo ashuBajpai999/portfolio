@@ -1,24 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import { Divider, Grid } from "@mui/material";
+import { Fragment } from "react";
+import "./App.css";
+import Header from "./Components/Header";
+import About from "./Modules/About";
+import Home from "./Modules/Home";
+import ProjectDetails from "./Modules/ProjectDetails";
+import Qualification from "./Modules/Qualification";
+import Skills from "./Modules/Skills";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Grid container className="main">
+        <Grid item md={12} xs={12} sm={12} height="12%">
+          <Header />
+        </Grid>
+        <Grid item md={12} xs={12} sm={12} height="88%">
+          <Home />
+        </Grid>
+      </Grid>
+      <About />
+      <Divider
+        sx={{
+          height: "1px",
+          backgroundColor: "lightGrey",
+        }}
+      />
+      <ProjectDetails />
+      <Divider
+        sx={{
+          height: "1px",
+          backgroundColor: "lightGrey",
+        }}
+      />
+      <Qualification />
+      <Divider
+        sx={{
+          height: "1px",
+          backgroundColor: "lightGrey",
+        }}
+      />
+      <Skills />
+    </Fragment>
   );
 }
 
