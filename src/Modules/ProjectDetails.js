@@ -49,7 +49,7 @@ const ProjectDetails = () => {
     window.open(data.link, "_blank");
   }, []);
   return (
-    <Grid container>
+    <Grid container id="Project">
       <Grid item md={12} xs={12} sm={12}>
         <Typography
           sx={{
@@ -105,6 +105,7 @@ const ProjectDetails = () => {
                   fontSize={17}
                   color={data.descriptionColor}
                   fontStyle={"italic"}
+                  textAlign="justify"
                 >
                   {data.description}
                 </Typography>

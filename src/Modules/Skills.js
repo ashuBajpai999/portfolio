@@ -3,7 +3,7 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <Grid container sx={{ backgroundColor: "lightcyan" }}>
+    <Grid container sx={{ backgroundColor: "lightcyan" }} id="Skills">
       <Grid item md={12} xs={12} sm={12}>
         <Typography
           variant="h4"
