@@ -1,8 +1,7 @@
 import MenuIcon from "@mui/icons-material/Menu";
-import { Avatar, Typography } from "@mui/material";
+import { Avatar, Link, Typography } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
 import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
@@ -15,7 +14,13 @@ import React, { Fragment } from "react";
 import "../App.css";
 import dp from "../image/ashu.jpg";
 const drawerWidth = 170;
-const navItems = ["Home", "About", "Project", "Qualification", "Contact"];
+const navItems = [
+  { name: "Home", id: "" },
+  { name: "About", id: "#About" },
+  { name: "Project", id: "#Project" },
+  { name: "Qualification", id: "#Qualification" },
+  { name: "Contact", id: "#Contact" },
+];
 
 const Header = (props) => {
   const { window } = props;
@@ -33,9 +38,9 @@ const Header = (props) => {
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
+          <ListItem key={item.name} disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
+              <ListItemText primary={item.name} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -74,9 +79,13 @@ const Header = (props) => {
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "flex" } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: "aqua", fontWeight: 900 }}>
-                {item}
-              </Button>
+              <Link
+                underline="none"
+                href={item.id}
+                sx={{ color: "aqua", p: { md: 2 }, fontWeight: 900 }}
+              >
+                {item.name}
+              </Link>
             ))}
           </Box>
           <Avatar src={dp} sx={{ display: { xs: "flex", sm: "none" } }} />

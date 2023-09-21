@@ -3,7 +3,14 @@ import React from "react";
 
 const About = () => {
   return (
-    <Grid container sx={{ backgroundColor: "cornsilk" }}>
+    <Grid
+      container
+      sx={{
+        backgroundColor: "cornsilk",
+        height: { md: "90vh", xs: "none", sm: "none" },
+      }}
+      id="About"
+    >
       <Grid item md={12} xs={12} sm={12}>
         <Typography
           sx={{ textAlign: "center", textDecoration: "underline", mt: 2 }}

@@ -7,6 +7,7 @@ import Home from "./Modules/Home";
 import ProjectDetails from "./Modules/ProjectDetails";
 import Qualification from "./Modules/Qualification";
 import Skills from "./Modules/Skills";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -41,6 +42,13 @@ function App() {
         }}
       />
       <Skills />
+      <Divider
+        sx={{
+          height: "1px",
+          backgroundColor: "lightGrey",
+        }}
+      />
+      <Footer />
     </Fragment>
   );
 }

@@ -41,8 +41,8 @@ const Home = () => {
           variant="square"
           sx={{
             bgcolor: "white",
-            width: { md: 390, xs: 300 },
-            height: { md: 390, xs: 300 },
+            width: { md: 370, xs: 300 },
+            height: { md: 370, xs: 300 },
             mt: 9,
             ml: { md: "auto", xs: "auto" },
             mr: { md: "auto", xs: "auto" },
@@ -51,13 +51,14 @@ const Home = () => {
         />
         <Avatar
           variant="rounded"
+          className="avtarColor"
           srcSet={img}
           sx={{
-            mt: { md: -47, xs: -36 },
+            mt: { md: -45, xs: -36 },
             ml: { md: "auto", xs: "auto" },
             mr: { md: "auto", xs: "auto" },
-            width: { md: 200, xs: 200 },
-            height: { md: 360, xs: 280 },
+            width: { md: 180, xs: 200 },
+            height: { md: 350, xs: 280 },
             transform: { md: "scale(1)", xs: "scale(0.9)" },
           }}
         />

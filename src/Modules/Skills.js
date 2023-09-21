@@ -3,12 +3,7 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <Grid
-      container
-      columnSpacing={2}
-      spacing={2}
-      sx={{ backgroundColor: "lightcyan" }}
-    >
+    <Grid container sx={{ backgroundColor: "lightcyan" }}>
       <Grid item md={12} xs={12} sm={12}>
         <Typography
           variant="h4"
@@ -27,12 +22,15 @@ const Skills = () => {
       >
         <ul>
           <li>
-            Experience in using <span> MUI - Material UI</span> for creating
-            responsive UI.
+            Experience in designing with <span> Canva.</span>
           </li>
           <li>
             Core knowladge of <span> Java</span> and basic knowladge of{" "}
             <span> Java Advance.</span>
+          </li>
+          <li>
+            Experience in using <span> MUI - Material UI</span> for creating
+            responsive UI.
           </li>
           <li>
             Working experience in <span> Git</span> & <span> Github</span> and
@@ -46,9 +44,6 @@ const Skills = () => {
           <li>
             Proficient in UI developement using front-end technologies like
             <span> HTML5, CSS3, JavaScript, ReactJS.</span>
-          </li>
-          <li>
-            Experience in designing with <span> Canva.</span>
           </li>
           <li>
             Ability to work in fast-paced and dynamic environment, and meet

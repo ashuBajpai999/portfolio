@@ -2,7 +2,14 @@ import React, { useCallback } from "react";
 import FitnessCard from "../image/FitnessClub.png";
 import AshutoshCard from "../image/AshutoshLogo.png";
 import MygstCafeCard from "../image/myGSTcafe.png";
-import { Card, CardContent, CardMedia, Grid, Typography } from "@mui/material";
+import {
+  Card,
+  CardContent,
+  CardMedia,
+  Grid,
+  Link,
+  Typography,
+} from "@mui/material";
 import "../App.css";
 
 const ProjectDetails = () => {
@@ -10,7 +17,7 @@ const ProjectDetails = () => {
     {
       path: FitnessCard,
       id: "fitnessCard",
-      headingColor: "gold",
+      headingColor: "#FFD700",
       descriptionColor: "black",
       heading: "Fitness Club",
       link: "https://ashubajpai999.github.io/fitnessClub/",
@@ -23,6 +30,7 @@ const ProjectDetails = () => {
       headingColor: "#96695E",
       descriptionColor: "#000000",
       heading: "Portfolio",
+      link: "https://ashubajpai999.github.io/portfolio/",
       description:
         "This is my Portfolio website here you see my all project details, skills, education details and a short note about myself",
     },
@@ -82,9 +90,16 @@ const ProjectDetails = () => {
                   minHeight: { md: 222, xs: 0, sm: 200 },
                 }}
               >
-                <Typography variant="h5" color={data.headingColor}>
+                <Link
+                  variant="h5"
+                  color={data.headingColor}
+                  underline="hover"
+                  sx={{ cursor: "pointer" }}
+                  href={data.link}
+                  target="_blank"
+                >
                   {data.heading}
-                </Typography>
+                </Link>
                 <Typography
                   variant="h6"
                   fontSize={17}

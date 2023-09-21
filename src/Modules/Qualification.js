@@ -37,7 +37,12 @@ const Qualification = () => {
     },
   ];
   return (
-    <Grid container spacing={2}>
+    <Grid
+      container
+      spacing={2}
+      id="Qualification"
+      sx={{ height: { md: "92vh", xs: "none", sm: "none" } }}
+    >
       <Grid item md={12} xs={12} sm={12}>
         <Typography
           sx={{ textAlign: "center", textDecoration: "underline", mt: 2 }}
