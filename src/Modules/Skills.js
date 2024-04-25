@@ -3,7 +3,14 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <Grid container sx={{ backgroundColor: "lightcyan" }} id="Skills">
+    <Grid
+      container
+      sx={{
+        height: { md: "100vh", xs: "none", sm: "none" },
+        backgroundColor: "lightcyan",
+      }}
+      id="Skills"
+    >
       <Grid item md={12} xs={12} sm={12}>
         <Typography
           variant="h4"
@@ -21,9 +28,6 @@ const Skills = () => {
         sx={{ ml: { md: 25, xs: 0 }, mr: { md: 25, xs: 3 } }}
       >
         <ul>
-          <li>
-            Experience in designing with <span> Canva.</span>
-          </li>
           <li>
             Core knowladge of <span> Java</span> and basic knowladge of{" "}
             <span> Java Advance.</span>

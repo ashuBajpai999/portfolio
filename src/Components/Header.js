@@ -40,7 +40,11 @@ const Header = (props) => {
       <List>
         {navItems.map((item) => (
           <ListItem key={item.name} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
+            <ListItemButton
+              component="a"
+              href={item.id}
+              sx={{ textAlign: "center" }}
+            >
               <ListItemText primary={item.name} />
             </ListItemButton>
           </ListItem>
@@ -61,11 +65,16 @@ const Header = (props) => {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
+            sx={{ mr: 2, display: { sm: "flex", md: "none" } }}
           >
             <MenuIcon />
           </IconButton>
-          <Avatar src={dp} sx={{ display: { xs: "none", sm: "flex" } }} />
+          <Avatar
+            src={dp}
+            sx={{
+              display: { xs: "none", sm: "none", md: "flex" },
+            }}
+          />
           <Typography
             className="avtar"
             variant="h6"
@@ -78,18 +87,26 @@ const Header = (props) => {
           >
             ASHUTOSH BAJPAI
           </Typography>
-          <Box sx={{ display: { xs: "none", sm: "flex" } }}>
+          <Box sx={{ display: { xs: "none", sm: "none", md: "flex" } }}>
             {navItems.map((item) => (
               <Link
                 underline="none"
                 href={item.id}
-                sx={{ color: "aqua", p: { md: 2 }, fontWeight: 900 }}
+                sx={{
+                  color: "aqua",
+                  p: { md: 2, sm: 0.6 },
+                  fontWeight: 900,
+                  fontSize: "1em",
+                }}
               >
                 {item.name}
               </Link>
             ))}
           </Box>
-          <Avatar src={dp} sx={{ display: { xs: "flex", sm: "none" } }} />
+          <Avatar
+            src={dp}
+            sx={{ display: { xs: "flex", sm: "flex", md: "none" } }}
+          />
         </Toolbar>
       </AppBar>
       <nav>
@@ -102,7 +119,7 @@ const Header = (props) => {
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
-            display: { xs: "flex", sm: "none" },
+            display: { xs: "flex", sm: "flex", md: "none" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,

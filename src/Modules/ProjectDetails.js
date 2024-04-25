@@ -15,6 +15,16 @@ import "../App.css";
 const ProjectDetails = () => {
   const imageList = [
     {
+      path: MygstCafeCard,
+      id: "mygstCard",
+      headingColor: "#5DB7FE",
+      descriptionColor: "black",
+      heading: "myGSTcafe",
+      link: "https://erp.mygstcafe.com/",
+      description:
+        "MyGSTcafe is the easiest Offline GST Return Filing Software. It helps to automate many calculations regarding the GST and file accurate returns. It can upload data from your excel sheets. It provides the one-click reconciliation facility. Presently I'm working on this project to develop the UI and create functioning between components",
+    },
+    {
       path: FitnessCard,
       id: "fitnessCard",
       headingColor: "#FFD700",
@@ -32,17 +42,7 @@ const ProjectDetails = () => {
       heading: "Portfolio",
       link: "https://ashubajpai999.github.io/portfolio/",
       description:
-        "This is my Portfolio website here you see my all project details, skills, education details and a short note about myself",
-    },
-    {
-      path: MygstCafeCard,
-      id: "mygstCard",
-      headingColor: "#5DB7FE",
-      descriptionColor: "black",
-      heading: "myGSTcafe",
-      link: "https://erp.mygstcafe.com/",
-      description:
-        "MyGSTcafe is the easiest Offline GST Return Filing Software. It helps to automate many calculations regarding the GST and file accurate returns. It can upload data from your excel sheets. It provides the one-click reconciliation facility. Presently I'm working on this project to develop the UI and create functioning between components",
+        "This is my Portfolio, here you see my all project details, skills, education details and note about myself and also you can directly contact with me to fill a contact form given below.",
     },
   ];
   const redirect = useCallback((data) => {
@@ -69,17 +69,16 @@ const ProjectDetails = () => {
             <Card
               className="card"
               sx={{
-                maxWidth: { md: 400, xs: 330, sm: 430 },
-                mr: { md: "auto", xs: "auto", sm: "auto" },
-                ml: { md: "auto", xs: "auto", sm: "auto" },
+                mr: { md: "1em", xs: "3em", sm: "1em" },
+                ml: { md: "1em", xs: "3em", sm: "1em" },
               }}
             >
               <CardMedia
                 image={data.path}
                 title="Click Me"
                 sx={{
-                  height: { md: 370, xs: 330, sm: 430 },
                   cursor: "pointer",
+                  aspectRatio: 1,
                 }}
                 onClick={() => {
                   redirect(data);
@@ -87,7 +86,7 @@ const ProjectDetails = () => {
               ></CardMedia>
               <CardContent
                 sx={{
-                  minHeight: { md: 222, xs: 0, sm: 200 },
+                  height: { md: "15em", xs: "0", sm: "20rem" },
                 }}
               >
                 <Link
@@ -101,10 +100,9 @@ const ProjectDetails = () => {
                   {data.heading}
                 </Link>
                 <Typography
-                  variant="h6"
-                  fontSize={17}
+                  fontSize="1.1rem"
                   color={data.descriptionColor}
-                  fontStyle={"italic"}
+                  fontStyle="oblique"
                   textAlign="justify"
                 >
                   {data.description}
