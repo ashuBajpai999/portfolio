@@ -100,3 +100,94 @@
     margin-left: 50;
   }
 }
+
+.center-container {
+  position: relative; /* Allows for absolute positioning within */
+}
+
+/* Central body */
+.center-circle {
+  width: 217px; /* Diameter of the inner circle */
+  height: 217px;
+  border-radius: 50%; /* Creates the circle shape */
+}
+
+/* Orbit ring (outer circle) */
+.orbit-ring {
+  width: 270px; /* Diameter of the outer orbit */
+  height: 270px;
+  border: 2px solid white; /* Creates the thin line for the orbit */
+  border-radius: 50%; /* Ensures the outer circle is round */
+  position: absolute; /* Absolute positioning within the container */
+  top: -27px;
+  left: -27px;
+}
+
+.orbit1-circle {
+  position: absolute;
+  animation: orbit1 15s infinite linear; /* Orbit animation */
+  left: 115px;
+  top: 115px;
+}
+
+.orbit2-circle {
+  position: absolute;
+  animation: orbit2 15s infinite linear; /* Orbit animation */
+  left: 115px;
+  top: 115px;
+}
+
+.orbit3-circle {
+  position: absolute;
+  animation: orbit3 15s infinite linear; /* Orbit animation */
+  left: 115px;
+  top: 115px;
+}
+
+.orbit4-circle {
+  position: absolute;
+  animation: orbit4 15s infinite linear; /* Orbit animation */
+  left: 115px;
+  top: 115px;
+}
+
+/* Animation for orbiting */
+@keyframes orbit1 {
+  from {
+    transform: rotate(0deg) translateX(135px);
+  }
+
+  to {
+    transform: rotate(360deg) translateX(135px);
+  }
+}
+
+@keyframes orbit2 {
+  from {
+    transform: rotate(0deg) translateY(-135px);
+  }
+
+  to {
+    transform: rotate(360deg) translateY(-135px);
+  }
+}
+
+@keyframes orbit3 {
+  from {
+    transform: rotate(0deg) translateX(-135px);
+  }
+
+  to {
+    transform: rotate(360deg) translateX(-135px);
+  }
+}
+
+@keyframes orbit4 {
+  from {
+    transform: rotate(0deg) translateY(135px);
+  }
+
+  to {
+    transform: rotate(360deg) translateY(135px);
+  }
+}
