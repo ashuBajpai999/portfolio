@@ -34,7 +34,6 @@ const About = () => {
             marginTop: { md: 3, sm: 3, xs: 3 },
             marginBottom: { md: 3, sm: 5, xs: 5 },
           }}
-          variant="h5"
         >
           Hello, I'm <span>Ashutosh Bajpai,</span> a dedicated{" "}
           <span>Web Application Developer</span> specializing in{" "}

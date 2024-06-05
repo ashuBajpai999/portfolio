@@ -4,6 +4,16 @@
 }
 .main1 {
   color: aqua;
+  width: 100vw;
+  height: 90vh;
+}
+.objective {
+  display: grid;
+  place-content: center;
+}
+.orbit {
+  display: grid;
+  place-content: center;
 }
 @media screen and (max-width: 330px) {
   .avtar {
@@ -58,6 +68,9 @@
 }
 .main2 {
   background-color: cornsilk;
+}
+.about {
+  font-size: clamp(0.8rem, 1.5rem, 2rem) !important;
 }
 .about span {
   color: brown;

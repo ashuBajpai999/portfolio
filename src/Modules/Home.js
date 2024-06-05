@@ -10,7 +10,6 @@ import "../App.css";
 
 const Home = () => {
   const handleClick = (icon) => {
-    debugger;
     switch (icon) {
       case "Facebook":
         window.open(
@@ -36,7 +35,7 @@ const Home = () => {
   };
   return (
     <Grid container className="main1">
-      <Grid item md={7} xs={12} sm={7}>
+      <Grid item md={7} xs={12} sm={7} className="objective">
         <Typography
           variant="h5"
           sx={{
@@ -64,7 +63,7 @@ const Home = () => {
           experience to contribute to the success of the company,,
         </Typography>
       </Grid>
-      <Grid item md={5} xs={12} sm={5} sx={{}}>
+      <Grid item md={5} xs={12} sm={5} className="orbit">
         <Grid container className="center-container" sx={{ mt: 9 }}>
           <Grid item className="orbit-ring">
             <FacebookIcon
