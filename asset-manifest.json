@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.56dd9ab0.css",
-    "main.js": "/portfolio/static/js/main.a3a1a898.js",
-    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "main.css": "/portfolio/static/css/main.27d3e8ec.css",
+    "main.js": "/portfolio/static/js/main.748d4ea9.js",
+    "static/js/415.6e2900f9.chunk.js": "/portfolio/static/js/415.6e2900f9.chunk.js",
     "static/media/ashutosh.png": "/portfolio/static/media/ashutosh.1a990a37457f282ec24c.png",
     "static/media/FitnessClub.png": "/portfolio/static/media/FitnessClub.1460c4c0864ff0463e76.png",
     "static/media/BCACard.png": "/portfolio/static/media/BCACard.3f4cb8e7c4ae63025a4c.png",
@@ -15,12 +15,12 @@
     "static/media/Graduation.png": "/portfolio/static/media/Graduation.726d43bc18608d2c7222.png",
     "static/media/Highschool.png": "/portfolio/static/media/Highschool.680cbafd8b8cb2b30d89.png",
     "index.html": "/portfolio/index.html",
-    "main.56dd9ab0.css.map": "/portfolio/static/css/main.56dd9ab0.css.map",
-    "main.a3a1a898.js.map": "/portfolio/static/js/main.a3a1a898.js.map",
-    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+    "main.27d3e8ec.css.map": "/portfolio/static/css/main.27d3e8ec.css.map",
+    "main.748d4ea9.js.map": "/portfolio/static/js/main.748d4ea9.js.map",
+    "415.6e2900f9.chunk.js.map": "/portfolio/static/js/415.6e2900f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.56dd9ab0.css",
-    "static/js/main.a3a1a898.js"
+    "static/css/main.27d3e8ec.css",
+    "static/js/main.748d4ea9.js"
   ]
 }
