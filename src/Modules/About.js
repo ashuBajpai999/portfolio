@@ -7,7 +7,6 @@ const About = () => {
       container
       sx={{
         backgroundColor: "cornsilk",
-        height: { md: "100vh", xs: "none", sm: "none" },
       }}
       id="About"
     >

@@ -88,8 +88,9 @@ const Header = (props) => {
             ASHUTOSH BAJPAI
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "none", md: "flex" } }}>
-            {navItems.map((item) => (
+            {navItems.map((item, index) => (
               <Link
+                key={index}
                 underline="none"
                 href={item.id}
                 sx={{

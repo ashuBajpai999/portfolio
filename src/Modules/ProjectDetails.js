@@ -63,9 +63,17 @@ const ProjectDetails = () => {
           Project Details
         </Typography>
       </Grid>
-      {imageList.map((data) => {
+      {imageList.map((data, index) => {
         return (
-          <Grid item md={4} xs={12} sm={6} marginTop={3} marginBottom={3}>
+          <Grid
+            item
+            md={4}
+            xs={12}
+            sm={6}
+            marginTop={3}
+            marginBottom={3}
+            key={index}
+          >
             <Card
               className="card"
               sx={{

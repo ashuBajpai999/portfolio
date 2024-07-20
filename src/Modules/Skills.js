@@ -6,7 +6,6 @@ const Skills = () => {
     <Grid
       container
       sx={{
-        height: { md: "100vh", xs: "none", sm: "none" },
         backgroundColor: "lightcyan",
       }}
       id="Skills"
@@ -29,8 +28,21 @@ const Skills = () => {
       >
         <ul>
           <li>
-            Core knowladge of <span> Java</span> and basic knowladge of{" "}
+            Core knowladge of <span> Java</span> and basic knowladge of
             <span> Java Advance.</span>
+          </li>
+          <li>
+            Working Experience in <span>C#</span> with
+            <span> .NET Framework.</span>
+          </li>
+          <li>
+            Experience in handling queries in <span>PostgreSQL</span> and
+            <span> FirebirdSQL.</span>
+          </li>
+          <li>
+            Utilized <span>Tortoise SVN</span> for version control, managing
+            commits and updates to ensure seamless team collaboration and code
+            integrity.
           </li>
           <li>
             Experience in using <span> MUI - Material UI</span> for creating

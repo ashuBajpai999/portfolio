@@ -76,14 +76,7 @@
   color: brown;
   font-style: italic;
 }
-.firstImage:hover {
-  transition: 1.5s ease-in-out;
-  opacity: 0;
-}
-.secondImage:hover {
-  opacity: 1;
-  transition: 1.5s;
-}
+
 .skills ul li span {
   color: red;
   font-weight: 700;
@@ -99,9 +92,6 @@
   color: white;
 }
 
-.icon:hover {
-  font-size: 40px;
-}
 .footer {
   background-color: black;
   color: #61dafb;
@@ -203,4 +193,26 @@
   to {
     transform: rotate(360deg) translateY(135px);
   }
+}
+
+.contactBackground {
+  background-image: linear-gradient(wheat, pink, gray);
+}
+
+.decorative {
+  margin: 0px 20px 0px 20px;
+  text-align: start;
+}
+
+.hu {
+  display: grid;
+  background-color: bisque;
+}
+
+.headingSpan {
+  color: red;
+}
+
+.contentSpan {
+  color: black;
 }
