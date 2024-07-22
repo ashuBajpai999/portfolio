@@ -19,10 +19,10 @@ const ContactPage = () => {
           Contact Me
         </Typography>
       </Grid>
-      <Grid item md={12}>
+      <Grid item md={12} sm={12} xs={12}>
         <Grid container display="flex">
-          <Grid item md={5} margin={4}>
-            <Typography variant="h1">Let's Connect With Chat</Typography>
+          <Grid item md={5} sm={5} xs={12} margin={2}>
+            <Typography variant="h2">Let's Connect With Chat</Typography>
           </Grid>
           <Grid item md={5}>
             <Grid container display="inherit" flexDirection="column">

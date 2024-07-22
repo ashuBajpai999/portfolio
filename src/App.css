@@ -1,6 +1,5 @@
 .main {
   background-color: black;
-  height: 100vh;
 }
 .main1 {
   color: aqua;
@@ -200,8 +199,8 @@
 }
 
 .decorative {
-  margin: 0px 20px 0px 20px;
-  text-align: start;
+  margin: 0px 14px 0px 14px !important;
+  text-align: start !important;
 }
 
 .hu {
@@ -215,4 +214,11 @@
 
 .contentSpan {
   color: black;
+}
+
+.qualificationCardHandler {
+  margin-bottom: 16px !important;
+  padding-left: 0 !important;
+  display: flex !important;
+  justify-content: center !important;
 }

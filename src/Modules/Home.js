@@ -1,12 +1,12 @@
-import { Grid, Typography } from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { Grid, Typography } from "@mui/material";
 import React from "react";
 // import img from "../image/profileImage.png";
-import img from "../image/ashutosh.png";
 import "../App.css";
+import img from "../image/ashutosh.png";
 
 const Home = () => {
   const handleClick = (icon) => {
@@ -34,7 +34,11 @@ const Home = () => {
     }
   };
   return (
-    <Grid container className="main1">
+    <Grid
+      container
+      className="main1"
+      sx={{ aspectRatio: { md: 2 / 1, sm: 1, xs: 1 } }}
+    >
       <Grid item md={7} xs={12} sm={7} className="objective">
         <Typography
           variant="h5"
@@ -42,8 +46,7 @@ const Home = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            fontStyle: "italic",
-            fontFamily: "cursive",
+            fontFamily: "sans",
             textDecoration: "underline",
           }}
         >
@@ -53,9 +56,7 @@ const Home = () => {
           variant="h6"
           sx={{
             margin: "2.5rem",
-            fontStyle: "italic",
             textAlign: "justify",
-            fontFamily: "cursive",
           }}
         >
           "To secure a position in an organization that offers opportunities for

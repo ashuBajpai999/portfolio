@@ -49,10 +49,14 @@ const Qualification = () => {
     },
   ];
   return (
-    <Grid container spacing={2} id="Qualification">
+    <Grid container spacing={2} columnGap={2} id="Qualification">
       <Grid item md={12} xs={12} sm={12}>
         <Typography
-          sx={{ textAlign: "center", textDecoration: "underline", mt: 2 }}
+          sx={{
+            textAlign: "center",
+            textDecoration: "underline",
+            mt: 1,
+          }}
           variant="h4"
         >
           Qualification Details
@@ -62,34 +66,26 @@ const Qualification = () => {
         return (
           <Grid
             item
-            md={2.7}
+            md={2.84}
             xs={12}
-            sm={5}
-            marginTop={0}
-            marginBottom={3}
-            marginLeft={2}
-            marginRight={2}
+            sm={5.843}
             key={index}
+            className="qualificationCardHandler"
           >
             <Card
               sx={{
-                maxWidth: { md: 320, xs: 330, sm: 500 },
-                mr: { md: "auto", xs: "auto", sm: "auto" },
-                ml: { md: "auto", xs: "auto", sm: "auto" },
+                width: { md: 320, xs: 330, sm: 300 },
               }}
             >
               <CardMedia
                 image={data.path}
                 sx={{
-                  height: { md: 300, xs: 330, sm: 430 },
+                  aspectRatio: 1,
                 }}
               ></CardMedia>
               <CardContent
                 sx={{
-                  maxWidth: { md: 320, xs: 330, sm: 500 },
-                  minHeight: { md: 150, xs: 150, sm: 150 },
-                  mr: { md: "auto", xs: "auto", sm: "auto" },
-                  ml: { md: "auto", xs: "auto", sm: "auto" },
+                  aspectRatio: 1,
                 }}
                 className="hu"
               >
