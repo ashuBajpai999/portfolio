@@ -1,10 +1,25 @@
 import { Call, Mail } from "@mui/icons-material";
-import { Grid, Link, Typography } from "@mui/material";
+import { Button, Grid, Link, Typography } from "@mui/material";
 import React from "react";
+import { getDownloadURL, ref } from "firebase/storage";
 import "../App.css";
-import { red } from "@mui/material/colors";
+import { storage } from "../Components/Firebase";
 
 const ContactPage = () => {
+  const handleClick = async () => {
+    try {
+      // Reference to the CV file in Firebase Storage
+      const cvRef = ref(storage, "ASHUTOSH BAJPAI.pdf"); // Ensure the path matches the one in your bucket
+
+      // Get the download URL
+      const cvUrl = await getDownloadURL(cvRef);
+
+      // Open the CV in a new tab
+      window.open(cvUrl, "_blank");
+    } catch (error) {
+      console.error("Error downloading CV:", error);
+    }
+  };
   return (
     <Grid container id="Contact" className="contactBackground">
       <Grid item md={12} xs={12} sm={12}>
@@ -22,7 +37,10 @@ const ContactPage = () => {
       <Grid item md={12} sm={12} xs={12}>
         <Grid container display="flex">
           <Grid item md={5} sm={5} xs={12} margin={2}>
-            <Typography variant="h2">Let's Connect With Chat</Typography>
+            <Typography>Let's Connect With Chat</Typography>
+            <Button variant="contained" onClick={handleClick}>
+              Download CV
+            </Button>
           </Grid>
           <Grid item md={5}>
             <Grid container display="inherit" flexDirection="column">

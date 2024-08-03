@@ -85,7 +85,7 @@ const Qualification = () => {
               ></CardMedia>
               <CardContent
                 sx={{
-                  aspectRatio: 1,
+                  aspectRatio: 1.6,
                 }}
                 className="hu"
               >

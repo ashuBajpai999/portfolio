@@ -1,23 +1,22 @@
 import { Divider, Grid } from "@mui/material";
-import { Fragment } from "react";
+import React, { Fragment } from "react";
 import "./App.css";
+import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import About from "./Modules/About";
 import Home from "./Modules/Home";
 import ProjectDetails from "./Modules/ProjectDetails";
 import Qualification from "./Modules/Qualification";
 import Skills from "./Modules/Skills";
-import Footer from "./Components/Footer";
-import ContactPage from "./Modules/ContactPage";
 
 function App() {
   return (
     <Fragment>
       <Grid container className="main">
-        <Grid item md={12} xs={12} sm={12} height="12%">
+        <Grid item md={12} xs={12} sm={12}>
           <Header />
         </Grid>
-        <Grid item md={12} xs={12} sm={12} height="88%">
+        <Grid item md={12} xs={12} sm={12}>
           <Home />
         </Grid>
       </Grid>
@@ -49,13 +48,7 @@ function App() {
           backgroundColor: "lightGrey",
         }}
       />
-      <ContactPage />
-      <Divider
-        sx={{
-          height: "1px",
-          backgroundColor: "lightGrey",
-        }}
-      />
+
       <Footer />
     </Fragment>
   );

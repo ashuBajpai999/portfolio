@@ -1,51 +1,155 @@
-import FacebookIcon from "@mui/icons-material/Facebook";
+import { Mail, WhatsApp } from "@mui/icons-material";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { Grid, Link, Typography } from "@mui/material";
+import { Divider, Grid, Link } from "@mui/material";
 import React from "react";
 import "../App.css";
 
 const Footer = () => {
+  const width = window.innerWidth;
+  const isMdScreen = width < 1400 && width >= 900;
   return (
-    <Grid container direction="row" className="footer">
-      <Grid item md={12} xs={12} sm={12} marginLeft={5}>
-        <Grid container>
-          <Grid item md={12} xs={12} sm={12}>
-            <Typography sx={{ pr: { xs: 4 }, textAlign: { xs: "justify" } }}>
-              <span className="footerText">
-                Copyright © 2023 reserved Designed By
-              </span>
-              &nbsp; Ashutosh Bajpai ❤
-            </Typography>
+    <Grid container className="footer">
+      <Grid item xs={12} md={2.5} sm={4}>
+        <Grid
+          container
+          display="flex"
+          justifyContent="space-evenly"
+          alignItems="center"
+        >
+          <Grid item xs={12} color="aqua" className="address">
+            <p
+              style={{
+                color: "goldenrod",
+                fontStyle: "oblique",
+              }}
+            >
+              ADDRESS
+            </p>
+            <p>Azad Nagar, Shuklaganj,</p>
+            <p> Unnao 209861</p>
           </Grid>
-          <Grid container>
-            <Grid item xs={3} sm={0.6} md={0.4}>
+        </Grid>
+      </Grid>
+      <Grid item className="verticalDivider">
+        <Divider orientation="vertical" />
+      </Grid>
+      <Grid item xs={12} md={4} sm={4}>
+        <Grid
+          container
+          display="flex"
+          justifyContent="space-evenly"
+          alignItems="center"
+        >
+          <Grid item>
+            <p
+              className="contactMe"
+              style={{
+                color: "goldenrod",
+                fontStyle: "oblique",
+                textAlign: "center",
+              }}
+            >
+              CONTACT ME
+            </p>
+            <p>
               <Link
+                color="aqua"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=ashutoshbajpai512@gmail.com&su=Recruitment Process&body=Your message here"
                 target="_blank"
-                href="https://m.facebook.com/profile.php/?id=100004580445865&name=xhp_nt__fb__action__open_user"
+                underline="none"
+                className="mailLink"
               >
-                <FacebookIcon fontSize="large" className="icon" />
+                <Mail
+                  sx={{
+                    color: "aqua",
+                  }}
+                  viewBox="2 0 22 18"
+                />
+                ashutoshbajpai512@gmail.com
               </Link>
-            </Grid>
-            <Grid item xs={3} sm={0.6} md={0.4}>
-              <Link href="https://instagram.com/surya9870/" target="_blank">
-                <InstagramIcon fontSize="large" className="icon" />
+            </p>
+            <p style={{ textAlign: "center" }}>
+              <Link
+                color="aqua"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=ashutoshbajpai512@gmail.com&su=Recruitment Process&body=Your message here"
+                target="_blank"
+                underline="none"
+                className="mailLink"
+              >
+                <WhatsApp
+                  sx={{
+                    color: "aqua",
+                  }}
+                  viewBox="2 0 22 22"
+                />
+                <span>+91 8299582099</span>
               </Link>
-            </Grid>
-            <Grid item xs={3} sm={0.6} md={0.4}>
+            </p>
+          </Grid>
+        </Grid>
+      </Grid>
+      <Grid item className="verticalDivider">
+        <Divider orientation="vertical" />
+      </Grid>
+      <Grid item xs={12} md={2} sm={4}>
+        <Grid
+          container
+          display="flex"
+          justifyContent="space-evenly"
+          alignItems="center"
+        >
+          <Grid item xs={12}>
+            <p
+              className="socialAddress"
+              style={{
+                color: "goldenrod",
+                fontStyle: "oblique",
+                textAlign: "center",
+              }}
+            >
+              SOCIAL ADDRESS
+            </p>
+            <p style={{ textAlign: "center" }}>
               <Link
                 href="https://in.linkedin.com/in/ashutosh-bajpai-6b8baa152"
                 target="_blank"
               >
                 <LinkedInIcon fontSize="large" className="icon" />
               </Link>
-            </Grid>
-            <Grid item xs={3} sm={0.6} md={0.4}>
               <Link href="https://github.com/ashuBajpai999/" target="_blank">
                 <GitHubIcon fontSize="large" className="icon" />
               </Link>
-            </Grid>
+            </p>
+          </Grid>
+        </Grid>
+      </Grid>
+      <Grid
+        item
+        xs={12}
+        md={0.02}
+        className={isMdScreen ? "verticalDivider" : "horizontalDivider"}
+      >
+        <Divider
+          orientation={isMdScreen ? "vertical" : ""}
+          variant={isMdScreen ? "fullWidth" : "middle"}
+        />
+      </Grid>
+      <Grid item xs={12} md={3} sm={4}>
+        <Grid
+          container
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <Grid
+            item
+            xs={12}
+            sx={{ textAlign: "center" }}
+            className="footerText"
+          >
+            <p className="text">Copyright © 2023 reserved Designed By</p>
+            <span className="name"> Ashutosh Bajpai ❤</span>
           </Grid>
         </Grid>
       </Grid>

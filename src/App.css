@@ -1,19 +1,15 @@
 .main {
   background-color: black;
+  row-gap: 100px;
 }
 .main1 {
   color: aqua;
-  width: 100vw;
-  height: 90vh;
 }
 .objective {
-  display: grid;
-  place-content: center;
+  /* display: grid !important;
+  place-content: center !important; */
 }
-.orbit {
-  display: grid;
-  place-content: center;
-}
+
 @media screen and (max-width: 330px) {
   .avtar {
     font-size: 14px !important;
@@ -69,7 +65,10 @@
   background-color: cornsilk;
 }
 .about {
-  font-size: clamp(0.8rem, 1.5rem, 2rem) !important;
+  font-size: clamp(1rem, 3vw, 1.1rem) !important;
+  text-align: justify !important;
+  line-height: 1.7 !important;
+  letter-spacing: 0.03em !important;
 }
 .about span {
   color: brown;
@@ -81,30 +80,79 @@
   font-weight: 700;
 }
 .skills ul li {
-  font-size: larger;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+  font-size: clamp(1rem, 3vw, 1.1rem);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   text-align: justify;
   margin-top: 10px;
 }
-.footerText {
-  color: white;
+
+/* Footer CSS Start */
+
+.footerText .text {
+  color: aqua;
+  font-size: clamp(0.5rem, 3.5vw, 1.1rem) !important;
+}
+
+.footerText .name {
+  color: gold;
+  font-size: clamp(0.5rem, 3.5vw, 1.1rem) !important;
 }
 
 .footer {
   background-color: black;
-  color: #61dafb;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  height: auto;
+  padding: 20px 0px;
 }
+
+.address {
+  text-align: center;
+}
+
+.footer .address,
+.mailLink,
+.contactMe,
+.socialAddress {
+  font-size: clamp(0.5rem, 3.5vw, 1.1rem) !important;
+}
+
+.verticalDivider {
+  width: 1.5px;
+  /* height: 110px; */
+  background-color: aqua;
+}
+
+.horizontalDivider {
+  height: 1.5px;
+  background-color: aqua;
+}
+
+.icon {
+  color: aqua;
+}
+
+/* Footer CSS End */
+
 @media screen and (max-width: 600px) {
   .footerLink {
     margin-left: 50;
   }
 }
 
+/*Orbitor CSS Start*/
+
+.orbit {
+  display: grid;
+  align-items: center;
+  min-height: 400px;
+}
+
 .center-container {
   position: relative; /* Allows for absolute positioning within */
+  justify-content: center;
+}
+
+.center-circle-avtar {
 }
 
 /* Central body */
@@ -118,11 +166,11 @@
 .orbit-ring {
   width: 270px; /* Diameter of the outer orbit */
   height: 270px;
-  border: 2px solid white; /* Creates the thin line for the orbit */
+  border: 2px solid aqua; /* Creates the thin line for the orbit */
   border-radius: 50%; /* Ensures the outer circle is round */
   position: absolute; /* Absolute positioning within the container */
   top: -27px;
-  left: -27px;
+  /* left: -27px; */
 }
 
 .orbit1-circle {
@@ -194,9 +242,7 @@
   }
 }
 
-.contactBackground {
-  background-image: linear-gradient(wheat, pink, gray);
-}
+/*Orbitor CSS End*/
 
 .decorative {
   margin: 0px 14px 0px 14px !important;

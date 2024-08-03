@@ -20,7 +20,6 @@ const navItems = [
   { name: "Project", id: "#Project" },
   { name: "Qualification", id: "#Qualification" },
   { name: "Skills", id: "#Skills" },
-  { name: "Contact", id: "#Contact" },
 ];
 
 const Header = (props) => {

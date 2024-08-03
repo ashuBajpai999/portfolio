@@ -2,10 +2,13 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { Grid, Typography } from "@mui/material";
+import { Button, Grid, Typography } from "@mui/material";
 import React from "react";
 // import img from "../image/profileImage.png";
+import { ArrowDownward } from "@mui/icons-material";
+import { getDownloadURL, ref } from "firebase/storage";
 import "../App.css";
+import { storage } from "../Components/Firebase";
 import img from "../image/ashutosh.png";
 
 const Home = () => {
@@ -33,39 +36,83 @@ const Home = () => {
         break;
     }
   };
+
+  const downloadCV = async () => {
+    try {
+      // Reference to the CV file in Firebase Storage
+      const cvRef = ref(storage, "ASHUTOSH BAJPAI.pdf"); // Ensure the path matches the one in your bucket
+
+      // Get the download URL
+      const cvUrl = await getDownloadURL(cvRef);
+
+      // Open the CV in a new tab
+      window.open(cvUrl, "_blank");
+    } catch (error) {
+      console.error("Error downloading CV:", error);
+    }
+  };
   return (
-    <Grid
-      container
-      className="main1"
-      sx={{ aspectRatio: { md: 2 / 1, sm: 1, xs: 1 } }}
-    >
+    <Grid container className="main1">
       <Grid item md={7} xs={12} sm={7} className="objective">
-        <Typography
-          variant="h5"
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            fontFamily: "sans",
-            textDecoration: "underline",
+        <div
+        // style={{ marginBottom: "10px" }}
+        >
+          <Typography
+            variant="h5"
+            sx={{
+              fontFamily: "sans",
+              textDecoration: "underline",
+              textAlign: "center",
+            }}
+          >
+            My Objective
+          </Typography>
+        </div>
+        <div>
+          <Typography
+            variant="h6"
+            sx={{
+              // margin: "2.5rem",
+              textAlign: "justify",
+            }}
+          >
+            "To secure a position in an organization that offers opportunities
+            for growth and advancement while also allowing me to utilize my
+            skills and experience to contribute to the success of the company,,
+          </Typography>
+        </div>
+        <div
+          style={{
+            textAlign: "center",
+            // marginTop: "10px",
           }}
         >
-          My Objective
-        </Typography>
-        <Typography
-          variant="h6"
-          sx={{
-            margin: "2.5rem",
-            textAlign: "justify",
-          }}
-        >
-          "To secure a position in an organization that offers opportunities for
-          growth and advancement while also allowing me to utilize my skills and
-          experience to contribute to the success of the company,,
-        </Typography>
+          <Button
+            onClick={downloadCV}
+            variant="contained"
+            sx={{
+              backgroundColor: "aqua",
+              "&:hover": {
+                backgroundColor: "aqua",
+              },
+              color: "black",
+            }}
+          >
+            Download CV
+            <ArrowDownward
+              sx={{
+                width: 40,
+                height: 40,
+                ml: 1,
+                border: "2px solid black",
+                borderRadius: "50%",
+              }}
+            ></ArrowDownward>
+          </Button>
+        </div>
       </Grid>
       <Grid item md={5} xs={12} sm={5} className="orbit">
-        <Grid container className="center-container" sx={{ mt: 9 }}>
+        <Grid container className="center-container">
           <Grid item className="orbit-ring">
             <FacebookIcon
               className="orbit2-circle"
@@ -96,7 +143,7 @@ const Home = () => {
               }}
             />
           </Grid>
-          <Grid item className="center-circle">
+          <Grid item className="center-circle-avtar">
             <img className="center-circle" src={img} alt="" />
           </Grid>
         </Grid>
