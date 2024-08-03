@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.226b77e2.css",
-    "main.js": "/portfolio/static/js/main.6387ad4e.js",
-    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "main.css": "/portfolio/static/css/main.b8a8cb22.css",
+    "main.js": "/portfolio/static/js/main.5a425719.js",
+    "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/ashutosh.png": "/portfolio/static/media/ashutosh.1a990a37457f282ec24c.png",
     "static/media/FitnessClub.png": "/portfolio/static/media/FitnessClub.1460c4c0864ff0463e76.png",
     "static/media/AshutoshLogo.png": "/portfolio/static/media/AshutoshLogo.889e36ee2526f871e59e.png",
@@ -11,12 +11,12 @@
     "static/media/Graduation.png": "/portfolio/static/media/Graduation.726d43bc18608d2c7222.png",
     "static/media/Highschool.png": "/portfolio/static/media/Highschool.680cbafd8b8cb2b30d89.png",
     "index.html": "/portfolio/index.html",
-    "main.226b77e2.css.map": "/portfolio/static/css/main.226b77e2.css.map",
-    "main.6387ad4e.js.map": "/portfolio/static/js/main.6387ad4e.js.map",
-    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+    "main.b8a8cb22.css.map": "/portfolio/static/css/main.b8a8cb22.css.map",
+    "main.5a425719.js.map": "/portfolio/static/js/main.5a425719.js.map",
+    "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.226b77e2.css",
-    "static/js/main.6387ad4e.js"
+    "static/css/main.b8a8cb22.css",
+    "static/js/main.5a425719.js"
   ]
 }
