@@ -2,10 +2,22 @@ import { Mail, WhatsApp } from "@mui/icons-material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Divider, Grid, Link } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import "../App.css";
+import ModelPopup from "./ModelPopup";
 
 const Footer = () => {
+  const [open, setOpen] = useState(false);
+
+  const handleClickOpen = (event) => {
+    event.stopPropagation();
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    debugger;
+    setOpen(false);
+  };
   const width = window.innerWidth;
   const isMdScreen = width < 1400 && width >= 900;
   return (
@@ -52,7 +64,7 @@ const Footer = () => {
             >
               CONTACT ME
             </p>
-            <p>
+            <p style={{ textAlign: "center" }}>
               <Link
                 color="aqua"
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=ashutoshbajpai512@gmail.com&su=Recruitment Process&body=Your message here"
@@ -72,8 +84,9 @@ const Footer = () => {
             <p style={{ textAlign: "center" }}>
               <Link
                 color="aqua"
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=ashutoshbajpai512@gmail.com&su=Recruitment Process&body=Your message here"
-                target="_blank"
+                //href="https://mail.google.com/mail/?view=cm&fs=1&to=ashutoshbajpai512@gmail.com&su=Recruitment Process&body=Your message here"
+                //target="_blank"
+                onClick={handleClickOpen}
                 underline="none"
                 className="mailLink"
               >
@@ -84,6 +97,7 @@ const Footer = () => {
                   viewBox="2 0 22 22"
                 />
                 <span>+91 8299582099</span>
+                {open && <ModelPopup open={open} onClose={handleClose} />}
               </Link>
             </p>
           </Grid>
