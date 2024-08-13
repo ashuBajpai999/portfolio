@@ -4,12 +4,11 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Button, Grid, Typography } from "@mui/material";
 import React from "react";
-// import img from "../image/profileImage.png";
 import { ArrowDownward } from "@mui/icons-material";
 import { getDownloadURL, ref } from "firebase/storage";
 import "../App.css";
 import { storage } from "../Components/Firebase";
-import img from "../image/ashutosh.png";
+import img from "../image/ashutosh.webp";
 
 const Home = () => {
   const handleClick = (icon) => {
@@ -72,7 +71,7 @@ const Home = () => {
           <Typography
             variant="h6"
             sx={{
-              // margin: "2.5rem",
+              margin: "2rem",
               textAlign: "justify",
             }}
           >
@@ -84,7 +83,7 @@ const Home = () => {
         <div
           style={{
             textAlign: "center",
-            // marginTop: "10px",
+            marginTop: "20px",
           }}
         >
           <Button

@@ -12,7 +12,7 @@ import ListItemText from "@mui/material/ListItemText";
 import Toolbar from "@mui/material/Toolbar";
 import React, { Fragment } from "react";
 import "../App.css";
-import dp from "../image/ashutosh.png";
+import dp from "../image/ashutosh.webp";
 const drawerWidth = 170;
 const navItems = [
   { name: "Home", id: "" },

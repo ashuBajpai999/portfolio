@@ -15,14 +15,13 @@ const Footer = () => {
   };
 
   const handleClose = () => {
-    debugger;
     setOpen(false);
   };
   const width = window.innerWidth;
   const isMdScreen = width < 1400 && width >= 900;
   return (
     <Grid container className="footer">
-      <Grid item xs={12} md={2.5} sm={4}>
+      <Grid item xs={12} md={2.5} sm={5}>
         <Grid
           container
           display="flex"
@@ -46,14 +45,14 @@ const Footer = () => {
       <Grid item className="verticalDivider">
         <Divider orientation="vertical" />
       </Grid>
-      <Grid item xs={12} md={4} sm={4}>
+      <Grid item xs={12} md={4} sm={5}>
         <Grid
           container
           display="flex"
           justifyContent="space-evenly"
           alignItems="center"
         >
-          <Grid item>
+          <Grid item xs={12}>
             <p
               className="contactMe"
               style={{
@@ -64,7 +63,7 @@ const Footer = () => {
             >
               CONTACT ME
             </p>
-            <p style={{ textAlign: "center" }}>
+            <p className="txtCenter">
               <Link
                 color="aqua"
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=ashutoshbajpai512@gmail.com&su=Recruitment Process&body=Your message here"
@@ -81,7 +80,7 @@ const Footer = () => {
                 ashutoshbajpai512@gmail.com
               </Link>
             </p>
-            <p style={{ textAlign: "center" }}>
+            <p className="txtCenter">
               <Link
                 color="aqua"
                 //href="https://mail.google.com/mail/?view=cm&fs=1&to=ashutoshbajpai512@gmail.com&su=Recruitment Process&body=Your message here"
@@ -103,10 +102,13 @@ const Footer = () => {
           </Grid>
         </Grid>
       </Grid>
-      <Grid item className="verticalDivider">
+      <Grid
+        item
+        className={isMdScreen ? "verticalDivider" : "horizontalDivider"}
+      >
         <Divider orientation="vertical" />
       </Grid>
-      <Grid item xs={12} md={2} sm={4}>
+      <Grid item xs={12} md={2} sm={12}>
         <Grid
           container
           display="flex"
@@ -149,7 +151,7 @@ const Footer = () => {
           variant={isMdScreen ? "fullWidth" : "middle"}
         />
       </Grid>
-      <Grid item xs={12} md={3} sm={4}>
+      <Grid item xs={12} md={3} sm={12}>
         <Grid
           container
           display="flex"

@@ -1,7 +1,7 @@
 import React, { useCallback } from "react";
-import FitnessCard from "../image/FitnessClub.png";
-import AshutoshCard from "../image/AshutoshLogo.png";
-import MygstCafeCard from "../image/myGSTcafe.png";
+import FitnessCard from "../image/FitnessClub.webp";
+import AshutoshCard from "../image/AshutoshLogo.webp";
+import MygstCafeCard from "../image/myGSTcafe.webp";
 import {
   Card,
   CardContent,

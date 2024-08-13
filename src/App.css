@@ -1,13 +1,13 @@
+.txtCenter {
+  text-align: center;
+}
+
 .main {
   background-color: black;
   row-gap: 100px;
 }
 .main1 {
   color: aqua;
-}
-.objective {
-  /* display: grid !important;
-  place-content: center !important; */
 }
 
 @media screen and (max-width: 330px) {
@@ -152,9 +152,6 @@
   justify-content: center;
 }
 
-.center-circle-avtar {
-}
-
 /* Central body */
 .center-circle {
   width: 217px; /* Diameter of the inner circle */
@@ -249,7 +246,7 @@
   text-align: start !important;
 }
 
-.hu {
+.qualificationContent {
   display: grid;
   background-color: bisque;
 }

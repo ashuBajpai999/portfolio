@@ -1,9 +1,9 @@
 import { Card, CardContent, CardMedia, Grid, Typography } from "@mui/material";
 import React from "react";
-import Graduation from "../image/Graduation.png";
-import Highschool from "../image/Highschool.png";
-import Intermediate from "../image/Intermediate.png";
-import PostGraduation from "../image/PostGraduation.png";
+import Graduation from "../image/Graduation.webp";
+import Highschool from "../image/Highschool.webp";
+import Intermediate from "../image/Intermediate.webp";
+import PostGraduation from "../image/PostGraduation.webp";
 
 const Qualification = () => {
   const imageList = [
@@ -87,7 +87,7 @@ const Qualification = () => {
                 sx={{
                   aspectRatio: 1.6,
                 }}
-                className="hu"
+                className="qualificationContent"
               >
                 <Typography className="decorative">
                   <span className="headingSpan">
