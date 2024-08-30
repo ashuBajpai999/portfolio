@@ -28,8 +28,8 @@ const About = () => {
           className="about"
           lineHeight={1.5}
           sx={{
-            marginLeft: { md: 20, xs: 3, sm: 3 },
-            marginRight: { md: 20, xs: 3, sm: 3 },
+            marginLeft: { md: "10vw", xs: 3, sm: 3 },
+            marginRight: { md: "10vw", xs: 3, sm: 3 },
             marginTop: { md: 3, sm: 3, xs: 3 },
             marginBottom: { md: 3, sm: 5, xs: 5 },
           }}

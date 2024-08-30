@@ -99,7 +99,7 @@ const Qualification = () => {
                 </Typography>
                 <Typography className="decorative">
                   <span className="headingSpan">
-                    {Object.keys(data.BoardName).toString()} :
+                    {Object.keys(data.BoardName).toString()} :-
                   </span>
                   <span className="contentSpan">
                     {Object.values(data.BoardName).toString()}

@@ -95,6 +95,7 @@ const Home = () => {
                 backgroundColor: "aqua",
               },
               color: "black",
+              marginBottom: "3vw",
             }}
           >
             Download CV

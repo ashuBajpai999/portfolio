@@ -24,7 +24,7 @@ const Skills = () => {
         xs={12}
         sm={12}
         className="skills"
-        sx={{ ml: { md: 25, xs: 0 }, mr: { md: 25, xs: 3 } }}
+        sx={{ ml: { md: "10vw", xs: 0 }, mr: { md: "10vw", xs: 3 } }}
       >
         <ul>
           <li>
@@ -38,11 +38,6 @@ const Skills = () => {
           <li>
             Experience in handling queries in <span>PostgreSQL</span> and
             <span> FirebirdSQL.</span>
-          </li>
-          <li>
-            Utilized <span>Tortoise SVN</span> for version control, managing
-            commits and updates to ensure seamless team collaboration and code
-            integrity.
           </li>
           <li>
             Experience in using <span> MUI - Material UI</span> for creating
@@ -60,6 +55,11 @@ const Skills = () => {
           <li>
             Proficient in UI developement using front-end technologies like
             <span> HTML5, CSS3, JavaScript, ReactJS.</span>
+          </li>
+          <li>
+            Utilized <span>Tortoise SVN</span> for version control, managing
+            commits and updates to ensure seamless team collaboration and code
+            integrity.
           </li>
           <li>
             Ability to work in fast-paced and dynamic environment, and meet

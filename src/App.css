@@ -69,6 +69,7 @@
   text-align: justify !important;
   line-height: 1.7 !important;
   letter-spacing: 0.03em !important;
+  hyphens: auto !important;
 }
 .about span {
   color: brown;
@@ -83,8 +84,9 @@
   font-size: clamp(1rem, 3vw, 1.1rem);
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-align: justify;
+  text-align: left;
   margin-top: 10px;
+  hyphens: auto;
 }
 
 /* Footer CSS Start */
