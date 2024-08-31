@@ -32,7 +32,10 @@ const ModelPopup = (props) => {
     e.stopPropagation();
     switch (name) {
       case "Whatsapp":
-        window.open("https://wa.me/<8299582099>", "_blank");
+        window.open(
+          "https://wa.me/918299582099?text=Hello Ashutosh!!!",
+          "_blank"
+        );
         break;
       case "Call":
         window.location.href = "tel:<+918299582099>";

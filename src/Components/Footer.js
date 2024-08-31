@@ -19,6 +19,20 @@ const Footer = () => {
   };
   const width = window.innerWidth;
   const isMdScreen = width < 1400 && width >= 900;
+
+  const email = "ashutoshbajpai512@gmail.com";
+  const subject = "Recruitment Process";
+  const body = "Your message here";
+
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+  const mailtoUrl = isMobile
+    ? `mailto:${email}?subject=${encodeURIComponent(
+        subject
+      )}&body=${encodeURIComponent(body)}`
+    : `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
+        email
+      )}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   return (
     <Grid container className="footer">
       <Grid item xs={12} md={2.5} sm={5}>
@@ -66,10 +80,11 @@ const Footer = () => {
             <p className="txtCenter">
               <Link
                 color="aqua"
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=ashutoshbajpai512@gmail.com&su=Recruitment Process&body=Your message here"
+                href={mailtoUrl}
                 target="_blank"
                 underline="none"
                 className="mailLink"
+                aria-label="Send an email to ashutoshbajpai512@gmail.com"
               >
                 <Mail
                   sx={{
