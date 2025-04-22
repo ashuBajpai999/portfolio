@@ -98,8 +98,8 @@ const Footer = () => {
             <p className="txtCenter">
               <Link
                 color="aqua"
-                //href="https://mail.google.com/mail/?view=cm&fs=1&to=ashutoshbajpai512@gmail.com&su=Recruitment Process&body=Your message here"
-                //target="_blank"
+                sx={{cursor:"pointer"}}
+                // target="_blank"
                 onClick={handleClickOpen}
                 underline="none"
                 className="mailLink"
@@ -179,7 +179,7 @@ const Footer = () => {
             sx={{ textAlign: "center" }}
             className="footerText"
           >
-            <p className="text">Copyright © 2023 reserved Designed By</p>
+            <p className="text">Copyright © 2025 reserved Designed By</p>
             <span className="name"> Ashutosh Bajpai ❤</span>
           </Grid>
         </Grid>

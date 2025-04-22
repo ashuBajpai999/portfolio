@@ -20,7 +20,7 @@ const ProjectDetails = () => {
       headingColor: "#5DB7FE",
       descriptionColor: "black",
       heading: "myGSTcafe",
-      link: "https://erp.mygstcafe.com/",
+      link: "https://erpqa.mygstcafe.com/",
       description:
         "MyGSTcafe is the easiest Offline GST Return Filing Software. It helps to automate many calculations regarding the GST and file accurate returns. It can upload data from your excel sheets. It provides the one-click reconciliation facility. Presently I'm working on this project to develop the UI and create functioning between components",
     },

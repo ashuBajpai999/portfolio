@@ -8,22 +8,15 @@ import PostGraduation from "../image/PostGraduation.webp";
 const Qualification = () => {
   const imageList = [
     {
-      path: Highschool,
-      SchoolName: { School: " B.N.S.D. Inter College" },
-      BoardName: { Board: " U.P Board" },
-      Result: { Result: " 84.16%" },
-      Stream: { Stream: " Commerce" },
-      RollNumber: { "Roll No.": " 1555256" },
-      Year: { Year: " 2014" },
-    },
-    {
-      path: Intermediate,
-      SchoolName: { School: " B.N.S.D. Inter College" },
-      BoardName: { Board: " U.P Board" },
-      Result: { Result: " 71.06%" },
-      Stream: { Stream: " Commerce" },
-      RollNumber: { "Roll No.": " 1159691" },
-      Year: { Year: " 2016" },
+      path: PostGraduation,
+      SchoolName: {
+        College: " Dr. VSICS, Saket Nagar, Kanpur",
+      },
+      BoardName: { University: " A.K.T.U" },
+      Result: { Result: " 80.01%" },
+      Stream: { Course: " M.C.A" },
+      RollNumber: { "Roll No.": " 2100470140019" },
+      Year: { Year: " 2021 - 2023" },
     },
     {
       path: Graduation,
@@ -37,16 +30,23 @@ const Qualification = () => {
       Year: { Year: " 2016 - 2019" },
     },
     {
-      path: PostGraduation,
-      SchoolName: {
-        College: " Dr. VSICS, Saket Nagar, Kanpur",
-      },
-      BoardName: { University: " A.K.T.U" },
-      Result: { Result: " 80.01%" },
-      Stream: { Course: " M.C.A" },
-      RollNumber: { "Roll No.": " 2100470140019" },
-      Year: { Year: " 2021 - 2023" },
+      path: Intermediate,
+      SchoolName: { School: " B.N.S.D. Inter College" },
+      BoardName: { Board: " U.P Board" },
+      Result: { Result: " 71.06%" },
+      Stream: { Stream: " Commerce" },
+      RollNumber: { "Roll No.": " 1159691" },
+      Year: { Year: " 2016" },
     },
+    {
+      path: Highschool,
+      SchoolName: { School: " B.N.S.D. Inter College" },
+      BoardName: { Board: " U.P Board" },
+      Result: { Result: " 84.16%" },
+      Stream: { Stream: " Commerce" },
+      RollNumber: { "Roll No.": " 1555256" },
+      Year: { Year: " 2014" },
+    }
   ];
   return (
     <Grid container spacing={2} columnGap={2} id="Qualification">

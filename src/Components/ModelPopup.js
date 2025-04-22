@@ -14,10 +14,14 @@ const option = [
   {
     optionName: "Whatsapp",
     icon: WhatsApp,
+    bgColor: "#3fed13",
+    avtarColor: "white"
   },
   {
     optionName: "Call",
     icon: Call,
+    bgColor: "#3fed13",
+    avtarColor: "white"
   },
 ];
 
@@ -51,7 +55,7 @@ const ModelPopup = (props) => {
       <List
         sx={{
           pt: 0,
-          backgroundColor: "aqua",
+          backgroundColor: "lightcyan",
         }}
       >
         {option.map((item, index) => (
@@ -60,7 +64,7 @@ const ModelPopup = (props) => {
               onClick={(e) => handleListItemClick(e, item.optionName)}
             >
               <ListItemAvatar>
-                <Avatar sx={{ color: "#76ff03", backgroundColor: "black" }}>
+                <Avatar sx={{ color: item.avtarColor, backgroundColor: item.bgColor }}>
                   <item.icon />
                 </Avatar>
               </ListItemAvatar>
