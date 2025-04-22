@@ -101,8 +101,8 @@ const Home = () => {
             Download CV
             <ArrowDownward
               sx={{
-                width: 40,
-                height: 40,
+                width: 30,
+                height: 30,
                 ml: 1,
                 border: "2px solid black",
                 borderRadius: "50%",

@@ -32,7 +32,7 @@ const ProjectDetails = () => {
       heading: "Fitness Club",
       link: "https://ashubajpai999.github.io/fitnessClub/",
       description:
-        "This is a gym based website and here you see excercises videos, gym based products like equipments, supplemennts etc. Here a gym trainer guide many of his trainee through its excercises videos. This is responsive website and in this I use Firebase Database to connect from server",
+        "This gym website is designed to motivate and engage fitness enthusiasts through a clean, modern, and energetic interface. With smooth visuals and user-friendly navigation, it creates a high-impact experience that reflects strength and dedication. Whether you're a beginner or a pro, the platform is built to inspire action and help users stay connected to their fitness goals.",
     },
     {
       path: AshutoshCard,
@@ -42,7 +42,7 @@ const ProjectDetails = () => {
       heading: "Portfolio",
       link: "https://ashubajpai999.github.io/portfolio/",
       description:
-        "This is my Portfolio, here you see my all project details, skills, education details and note about myself and also you can directly contact with me to fill a contact form given below.",
+        "This portfolio is a reflection of my creativity and passion for design, combining modern aesthetics, smooth animations, and real-time features to deliver a professional and engaging user experience. Every section is crafted to leave a lasting impression while keeping things simple, elegant, and easy to explore.",
     },
   ];
   const redirect = useCallback((data) => {
