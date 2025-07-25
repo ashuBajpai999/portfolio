@@ -93,29 +93,26 @@
 
 .footerText .text {
   color: aqua;
-  font-size: clamp(0.5rem, 3.5vw, 1.1rem) !important;
+  font-size: clamp(1rem, 3vw, 1.1rem) !important;
 }
 
 .footerText .name {
   color: gold;
-  font-size: clamp(0.5rem, 3.5vw, 1.1rem) !important;
+  font-size: clamp(1rem, 3vw, 1.1rem) !important;
 }
 
 .footer {
   background-color: black;
   height: auto;
   padding: 20px 0px;
+  justify-content: center;
 }
 
-.address {
-  text-align: center;
-}
-
-.footer .address,
+.footer,
 .mailLink,
 .contactMe,
 .socialAddress {
-  font-size: clamp(0.5rem, 3.5vw, 1.1rem) !important;
+  font-size: clamp(1rem, 3vw, 1.1rem) !important;
 }
 
 .verticalDivider {
