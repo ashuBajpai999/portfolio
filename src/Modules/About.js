@@ -1,7 +1,70 @@
 import { Grid, Typography } from "@mui/material";
-import React from "react";
+import { useEffect, useState } from "react";
 
 const About = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Detect screen size
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const toggleExpand = () => {
+    setIsExpanded((prev) => !prev);
+  };
+
+  const mobileView = (
+    <>
+      Hello! I’m <span>Ashutosh Bajpai</span>, a passionate and dedicated{" "}
+      <span>Web Application Developer</span> from{" "}
+      <span>Unnao, Uttar Pradesh</span>, with over a year of hands-on experience
+      in creating modern, responsive web applications. Since{" "}
+      <span>March 2023</span>, I’ve been working at{" "}
+      <span>Opticodes Technologies Private Limited</span>, where I focus on
+      developing interactive and user-friendly interfaces using{" "}
+      <span>React JS</span>, along with{" "}
+      <span>HTML5, CSS3, JavaScript, jQuery</span>, and <span>Material UI</span>
+      . I regularly work with <span>React Hooks</span> to manage component state
+      and side effects, and integrate <span>RESTful APIs</span> to build
+      dynamic, data-driven features. On the backend side, I contribute using{" "}
+      <span>C# and .NET</span>, connecting applications with
+      <span> PostgreSQL</span> and<span> FirebirdSQL</span> databases.
+    </>
+  );
+  const desktopView = (
+    <>
+      {mobileView} I also use{" "}
+      <span>Firebase</span> to implement real-time functionality and lightweight
+      backend services. My development workflow includes tools like{" "}
+      <span>Visual Studio</span>, <span>VS Code</span>, <span>Postman</span>,
+      and version control systems such as <span>Git</span>, <span>GitHub</span>,
+      and <span>TortoiseSVN</span> to maintain clean and collaborative
+      codebases. I earned my <span>Master of Computer Applications (MCA)</span>{" "}
+      in <span>2023</span>, and{" "}
+      <span>Bachelor of Computer Applications (BCA)</span> in <span>2019</span>,
+      both from{" "}
+      <span>Dr. Virendra Swarup Institute of Computer Studies, Kanpur</span>. I
+      completed my <span>Intermediate</span> in <span>2016</span> and{" "}
+      <span>High School</span> in <span>2014</span>. What excites me most is the
+      process of transforming creative ideas into meaningful digital
+      experiences. I'm especially drawn to crafting{" "}
+      <span>clean, engaging UIs</span> that are both functional and visually
+      appealing. My goal is to evolve into a <span>Full Stack Developer</span>,
+      gaining deeper expertise in <span>backend technologies</span>,{" "}
+      <span>scalable architectures</span>, and <span>cloud-based systems</span>.
+      Driven by <span>curiosity</span> and a love for{" "}
+      <span>problem-solving</span>, I’m constantly learning and improving —
+      striving to create websites that users love and remember.
+    </>
+  );
   return (
     <Grid
       container
@@ -23,39 +86,44 @@ const About = () => {
         </Typography>
       </Grid>
       <Grid item md={12} xs={12} sm={12}>
-        <Typography
-          textAlign="center"
-          className="about"
-          lineHeight={1.5}
-          sx={{
-            marginLeft: { md: "10vw", xs: 3, sm: 3 },
-            marginRight: { md: "10vw", xs: 3, sm: 3 },
-            marginTop: { md: 3, sm: 3, xs: 3 },
-            marginBottom: { md: 3, sm: 5, xs: 5 },
-          }}
-        >
-          Hello, I'm <span>Ashutosh Bajpai,</span> a dedicated{" "}
-          <span>Web Application Developer</span> specializing in{" "}
-          <span>React JS, HTML, CSS, & JQuery</span> with a year of hands-on
-          experience and I'm from <span>Unnao, Uttar Pradesh</span>. I'm
-          currently working in
-          <span> Opticodes Technologies Private Limited</span> from the
-          March-2023 as a<span> Web Application Developer.</span> I've taken on
-          pivotal roles in meeting front-end requirements, focusing on crafting
-          engaging and seamless web pages. What truly excites me is the process
-          of <span>designing</span> and <span>developing</span> captivating
-          website pages that resonate with users. My aspiration is to evolve
-          into a Full Stack Developer, expanding my skills to encompass a
-          broader spectrum of web development. I completed my{" "}
-          <span> MCA(Master of Computer Apllication)</span> from{" "}
-          <span> Dr. Virendra Swarup Institute of Computer Studies</span>,
-          Kanpur Nagar, Uttar Pradesh in year 2021-2023. I have also done my
-          BCA(Bachelor of Computer Application) from this college in year
-          2016-2019. I completed my <span> Intermediate</span> &
-          <span> Highschool</span> in year 2016 & 2014. I'm driven by the
-          creativity inherent in design and the problem-solving aspect of
-          development, constantly striving to enhance user experiences
-        </Typography>
+        {isMobile && !isExpanded ? (
+          <Typography
+            textAlign="center"
+            className="about"
+            lineHeight={1.5}
+            sx={{
+              marginLeft: { md: "10vw", xs: 3, sm: 3 },
+              marginRight: { md: "10vw", xs: 3, sm: 3 },
+              marginTop: { md: 3, sm: 3, xs: 3 },
+              marginBottom: { md: 3, sm: 5, xs: 5 },
+            }}
+          >
+            {mobileView}....
+            {isMobile && (
+              <span onClick={toggleExpand} className="see-more-btn">
+                Read More
+              </span>
+            )}
+          </Typography>
+        ) : (
+          <Typography
+            textAlign="center"
+            className="about"
+            lineHeight={1.5}
+            sx={{
+              marginLeft: { md: "10vw", xs: 3, sm: 3 },
+              marginRight: { md: "10vw", xs: 3, sm: 3 },
+              marginTop: { md: 3, sm: 3, xs: 3 },
+              marginBottom: { md: 3, sm: 5, xs: 5 },
+            }}
+          >
+            {desktopView}{isMobile && (
+              <span onClick={toggleExpand} className="see-more-btn">
+                See Less
+              </span>
+            )}
+          </Typography>
+        )}
       </Grid>
     </Grid>
   );

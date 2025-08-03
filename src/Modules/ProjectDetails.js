@@ -49,77 +49,78 @@ const ProjectDetails = () => {
     window.open(data.link, "_blank");
   }, []);
   return (
-    <Grid container id="Project">
+    <Grid container id="Project" spacing={2}>
       <Grid item md={12} xs={12} sm={12}>
         <Typography
           sx={{
             textAlign: "center",
             textDecoration: "underline",
-            pt: 2,
-            pb: 2,
+            mt: 1,
           }}
           variant="h4"
         >
           Project Details
         </Typography>
       </Grid>
-      {imageList.map((data, index) => {
-        return (
-          <Grid
-            item
-            md={4}
-            xs={12}
-            sm={6}
-            marginTop={3}
-            marginBottom={3}
-            key={index}
-          >
-            <Card
-              className="card"
-              sx={{
-                mr: { md: "1em", xs: "3em", sm: "1em" },
-                ml: { md: "1em", xs: "3em", sm: "1em" },
-              }}
-            >
-              <CardMedia
-                image={data.path}
-                title="Click Me"
-                sx={{
-                  cursor: "pointer",
-                  aspectRatio: 1,
-                }}
-                onClick={() => {
-                  redirect(data);
-                }}
-              ></CardMedia>
-              <CardContent
-                sx={{
-                  height: { md: "15em", xs: "0", sm: "20rem" },
-                }}
+      <Grid item md={12} xs={12} sm={12}>
+        <Grid container spacing={2} columnGap={1} justifyContent="center" marginBottom={2}>
+          {imageList.map((data, index) => {
+            return (
+              <Grid
+                item
+                md={3.5}
+                xs={12}
+                sm={5.843}
+                key={index}
               >
-                <Link
-                  variant="h5"
-                  color={data.headingColor}
-                  underline="hover"
-                  sx={{ cursor: "pointer" }}
-                  href={data.link}
-                  target="_blank"
+                <Card
+                  sx={{
+                    mr: { md: "1em", xs: "3em", sm: "1em" },
+                    ml: { md: "1em", xs: "3em", sm: "1em" },
+                  }}
                 >
-                  {data.heading}
-                </Link>
-                <Typography
-                  fontSize="1.1rem"
-                  color={data.descriptionColor}
-                  fontStyle="oblique"
-                  textAlign="justify"
-                >
-                  {data.description}
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-        );
-      })}
+                  <CardMedia
+                    image={data.path}
+                    title="Click Me"
+                    sx={{
+                      cursor: "pointer",
+                      aspectRatio: 1,
+                    }}
+                    onClick={() => {
+                      redirect(data);
+                    }}
+                  ></CardMedia>
+                  <CardContent
+                    sx={{
+                      height: { md: "20em", xs: "0", sm: "20rem" },
+                    }}
+                    className="projectContent"
+                  >
+                    <Link
+                      variant="h5"
+                      color={data.headingColor}
+                      underline="hover"
+                      sx={{ cursor: "pointer" }}
+                      href={data.link}
+                      target="_blank"
+                    >
+                      {data.heading}
+                    </Link>
+                    <Typography
+                      fontSize="1.1rem"
+                      color={data.descriptionColor}
+                      fontStyle="oblique"
+                      textAlign="justify"
+                    >
+                      {data.description}
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+            );
+          })}
+        </Grid>
+      </Grid>
     </Grid>
   );
 };

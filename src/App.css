@@ -105,7 +105,7 @@
   background-color: black;
   height: auto;
   padding: 20px 0px;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .footer,
@@ -250,6 +250,10 @@
   background-color: bisque;
 }
 
+.projectContent{
+  display: grid;
+}
+
 .headingSpan {
   color: red;
 }
@@ -263,4 +267,13 @@
   padding-left: 0 !important;
   display: flex !important;
   justify-content: center !important;
+}
+
+.see-more-btn {
+  margin-top: 10px;
+  color: blue !important;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: underline;
 }

@@ -46,7 +46,7 @@ const Qualification = () => {
       Stream: { Stream: " Commerce" },
       RollNumber: { "Roll No.": " 1555256" },
       Year: { Year: " 2014" },
-    }
+    },
   ];
   return (
     <Grid container spacing={2} columnGap={2} id="Qualification">
@@ -62,86 +62,90 @@ const Qualification = () => {
           Qualification Details
         </Typography>
       </Grid>
-      {imageList.map((data, index) => {
-        return (
-          <Grid
-            item
-            md={2.84}
-            xs={12}
-            sm={5.843}
-            key={index}
-            className="qualificationCardHandler"
-          >
-            <Card
-              sx={{
-                width: { md: 320, xs: 330, sm: 300 },
-              }}
-            >
-              <CardMedia
-                image={data.path}
-                sx={{
-                  aspectRatio: 1,
-                }}
-              ></CardMedia>
-              <CardContent
-                sx={{
-                  aspectRatio: 1.6,
-                }}
-                className="qualificationContent"
+      <Grid item md={12} xs={12} sm={12}>
+        <Grid container justifyContent="center" columnGap={1} spacing={2} marginBottom={2}>
+          {imageList.map((data, index) => {
+            return (
+              <Grid
+                item
+                md={2.84}
+                xs={12}
+                sm={5.843}
+                key={index}
               >
-                <Typography className="decorative">
-                  <span className="headingSpan">
-                    {Object.keys(data.SchoolName).toString()} :-
-                  </span>
-                  <span className="contentSpan">
-                    {Object.values(data.SchoolName).toString()}
-                  </span>
-                </Typography>
-                <Typography className="decorative">
-                  <span className="headingSpan">
-                    {Object.keys(data.BoardName).toString()} :-
-                  </span>
-                  <span className="contentSpan">
-                    {Object.values(data.BoardName).toString()}
-                  </span>
-                </Typography>
-                <Typography className="decorative">
-                  <span className="headingSpan">
-                    {Object.keys(data.Result).toString()} :-
-                  </span>
-                  <span className="contentSpan">
-                    {Object.values(data.Result).toString()}
-                  </span>
-                </Typography>
-                <Typography className="decorative">
-                  <span className="headingSpan">
-                    {Object.keys(data.Stream).toString()} :-
-                  </span>
-                  <span className="contentSpan">
-                    {Object.values(data.Stream).toString()}
-                  </span>
-                </Typography>
-                <Typography className="decorative">
-                  <span className="headingSpan">
-                    {Object.keys(data.RollNumber).toString()} :-
-                  </span>
-                  <span className="contentSpan">
-                    {Object.values(data.RollNumber).toString()}
-                  </span>
-                </Typography>
-                <Typography className="decorative">
-                  <span className="headingSpan">
-                    {Object.keys(data.Year).toString()} :-
-                  </span>
-                  <span className="contentSpan">
-                    {Object.values(data.Year).toString()}
-                  </span>
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-        );
-      })}
+                <Card
+                  sx={{
+                    mr: { md: "1em", xs: "3em", sm: "1em" },
+                    ml: { md: "1em", xs: "3em", sm: "1em" },
+                  }}
+                >
+                  <CardMedia
+                    image={data.path}
+                    sx={{
+                      aspectRatio: 1,
+                    }}
+                  ></CardMedia>
+                  <CardContent
+                    sx={{
+                      aspectRatio: 1.6,
+                    }}
+                    className="qualificationContent"
+                  >
+                    <Typography className="decorative">
+                      <span className="headingSpan">
+                        {Object.keys(data.SchoolName).toString()} :-
+                      </span>
+                      <span className="contentSpan">
+                        {Object.values(data.SchoolName).toString()}
+                      </span>
+                    </Typography>
+                    <Typography className="decorative">
+                      <span className="headingSpan">
+                        {Object.keys(data.BoardName).toString()} :-
+                      </span>
+                      <span className="contentSpan">
+                        {Object.values(data.BoardName).toString()}
+                      </span>
+                    </Typography>
+                    <Typography className="decorative">
+                      <span className="headingSpan">
+                        {Object.keys(data.Result).toString()} :-
+                      </span>
+                      <span className="contentSpan">
+                        {Object.values(data.Result).toString()}
+                      </span>
+                    </Typography>
+                    <Typography className="decorative">
+                      <span className="headingSpan">
+                        {Object.keys(data.Stream).toString()} :-
+                      </span>
+                      <span className="contentSpan">
+                        {Object.values(data.Stream).toString()}
+                      </span>
+                    </Typography>
+                    <Typography className="decorative">
+                      <span className="headingSpan">
+                        {Object.keys(data.RollNumber).toString()} :-
+                      </span>
+                      <span className="contentSpan">
+                        {Object.values(data.RollNumber).toString()}
+                      </span>
+                    </Typography>
+                    <Typography className="decorative">
+                      <span className="headingSpan">
+                        {Object.keys(data.Year).toString()} :-
+                      </span>
+                      <span className="contentSpan">
+                        {Object.values(data.Year).toString()}
+                      </span>
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+            );
+          })}
+        </Grid>
+      </Grid>
     </Grid>
   );
 };
