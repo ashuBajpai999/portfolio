@@ -8,6 +8,7 @@ import { getDownloadURL, ref } from "firebase/storage";
 import "../App.css";
 import { storage } from "../Components/Firebase";
 import img from "../image/ashutosh.webp";
+import "../Assets/CSS/Home.css";
 
 const Home = () => {
   const handleClick = (icon) => {
@@ -143,7 +144,7 @@ const Home = () => {
             />
           </Grid>
           <Grid item className="center-circle-avtar">
-            <img className="center-circle" src={img} alt="ashutosh.jpg"/>
+            <img className="center-circle" src={img} alt="ashutosh.jpg" />
           </Grid>
         </Grid>
       </Grid>

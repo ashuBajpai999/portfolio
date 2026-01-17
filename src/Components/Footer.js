@@ -2,10 +2,10 @@ import { Mail, WhatsApp } from "@mui/icons-material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Divider, Grid, Link } from "@mui/material";
-import React, { useState } from "react";
+import { useState } from "react";
 import "../App.css";
-import ModelPopup from "./ModelPopup";
 import "../Assets/CSS/Footer.css";
+import ModelPopup from "./ModelPopup";
 
 const Footer = () => {
   const [open, setOpen] = useState(false);
