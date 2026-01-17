@@ -5,6 +5,7 @@ import { Divider, Grid, Link } from "@mui/material";
 import React, { useState } from "react";
 import "../App.css";
 import ModelPopup from "./ModelPopup";
+import "../Assets/CSS/Footer.css";
 
 const Footer = () => {
   const [open, setOpen] = useState(false);
@@ -44,9 +45,8 @@ const Footer = () => {
         >
           <Grid item xs={12}>
             <p
-              className="contactMe"
+              className="contactMe name"
               style={{
-                color: "goldenrod",
                 fontStyle: "oblique",
                 textAlign: "center",
               }}
@@ -113,9 +113,8 @@ const Footer = () => {
         >
           <Grid item xs={12}>
             <p
-              className="socialAddress"
+              className="socialAddress name"
               style={{
-                color: "goldenrod",
                 fontStyle: "oblique",
                 textAlign: "center",
               }}
@@ -160,7 +159,7 @@ const Footer = () => {
             sx={{ textAlign: "center" }}
             className="footerText"
           >
-            <p className="text">© 2025 Fitness Club - All rights reserved.</p>
+            <p className="text">© 2025 @AshuTheWebDev - All rights reserved.</p>
             <span className="name"> Ashutosh Bajpai ❤</span>
           </Grid>
         </Grid>

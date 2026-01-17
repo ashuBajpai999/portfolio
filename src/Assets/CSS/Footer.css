@@ -1,0 +1,38 @@
+/* Footer CSS Start */
+
+.footerText .text,
+.icon {
+  color: aqua;
+}
+
+.name {
+  color: gold;
+}
+
+.footer {
+  background-color: black;
+  height: auto;
+  padding: 20px 0px;
+  justify-content: space-evenly;
+}
+
+.footer,
+.footerText,
+.mailLink,
+.contactMe,
+.socialAddress {
+  font-size: clamp(1rem, 3vw, 1.1rem) !important;
+}
+
+.verticalDivider {
+  width: 1.5px;
+  /* height: 110px; */
+  background-color: aqua;
+}
+
+.horizontalDivider {
+  height: 1.5px;
+  background-color: aqua;
+}
+
+/* Footer CSS End */

@@ -33,7 +33,7 @@ const Header = (props) => {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        Ashutosh Bajpai
+        AB
       </Typography>
       <Divider />
       <List>
@@ -81,7 +81,7 @@ const Header = (props) => {
             sx={{
               flexGrow: 1,
               display: { xs: "flex", sm: "flex" },
-              fontFamily: "cursive",
+              fontFamily: "serif",
             }}
           >
             ASHUTOSH BAJPAI
@@ -123,6 +123,22 @@ const Header = (props) => {
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
+              bgcolor: "#000",
+              "& .MuiTypography-h6": {
+                color: "gold",
+                fontFamily: "serif",
+                fontSize: "3rem",
+              },
+              "& .MuiDivider-fullWidth": {
+                borderColor: "gold",
+              },
+              "& .MuiListItemButton-root": {
+                color: "aqua",
+              },
+              "& .MuiTypography-body1": {
+                fontFamily: "serif",
+                fontSize: "1.2rem",
+              },
             },
           }}
         >
