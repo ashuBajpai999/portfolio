@@ -32,8 +32,19 @@ const Header = (props) => {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        AB
+      <Typography
+        component={"span"}
+        variant="h6"
+        sx={{ fontFamily: "Cinzel Decorative", fontWeight: 700 }}
+      >
+        A
+      </Typography>
+      <Typography
+        component={"span"}
+        variant="h6"
+        sx={{ fontFamily: "Fredericka the Great" }}
+      >
+        B
       </Typography>
       <Divider />
       <List>
@@ -95,8 +106,10 @@ const Header = (props) => {
                 sx={{
                   color: "aqua",
                   p: { md: 2, sm: 0.6 },
-                  fontWeight: 900,
-                  fontSize: "1em",
+                  fontWeight: 400,
+                  fontFamily: `serif`,
+                  letterSpacing: 1,
+                  fontSize: "1.2em",
                 }}
               >
                 {item.name}
@@ -126,7 +139,7 @@ const Header = (props) => {
               bgcolor: "#000",
               "& .MuiTypography-h6": {
                 color: "gold",
-                fontFamily: "serif",
+                // fontFamily: "Cinzel Decorative",
                 fontSize: "3rem",
               },
               "& .MuiDivider-fullWidth": {

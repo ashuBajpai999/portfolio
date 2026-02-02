@@ -2,7 +2,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { Button, Grid, Typography } from "@mui/material";
+import { Button, Grid, Typography, useTheme } from "@mui/material";
 import { ArrowDownward } from "@mui/icons-material";
 import { getDownloadURL, ref } from "firebase/storage";
 import "../App.css";
@@ -11,12 +11,13 @@ import img from "../image/ashutosh.webp";
 import "../Assets/CSS/Home.css";
 
 const Home = () => {
+  const theme = useTheme();
   const handleClick = (icon) => {
     switch (icon) {
       case "Facebook":
         window.open(
           "https://m.facebook.com/profile.php/?id=100004580445865&name=xhp_nt__fb__action__open_user",
-          "_blank"
+          "_blank",
         );
         break;
       case "Instagram":
@@ -28,7 +29,7 @@ const Home = () => {
       case "Linkedln":
         window.open(
           "https://in.linkedin.com/in/ashutosh-bajpai-6b8baa152",
-          "_blank"
+          "_blank",
         );
         break;
       default:
@@ -89,25 +90,28 @@ const Home = () => {
           <Button
             onClick={downloadCV}
             variant="contained"
+            color="primary"
+            endIcon={
+              <ArrowDownward
+                sx={{
+                  width: 30,
+                  height: 30,
+                  ml: 1,
+                  border: "2px solid black",
+                  borderRadius: "50%",
+                }}
+              ></ArrowDownward>
+            }
             sx={{
-              backgroundColor: "aqua",
+              // backgroundColor: "aqua",
               "&:hover": {
-                backgroundColor: "aqua",
+                backgroundColor: theme.palette.primary.main,
               },
               color: "black",
               marginBottom: "3vw",
             }}
           >
             Download CV
-            <ArrowDownward
-              sx={{
-                width: 30,
-                height: 30,
-                ml: 1,
-                border: "2px solid black",
-                borderRadius: "50%",
-              }}
-            ></ArrowDownward>
           </Button>
         </div>
       </Grid>

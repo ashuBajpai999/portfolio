@@ -1,10 +1,11 @@
-import { Mail, WhatsApp } from "@mui/icons-material";
+import { Favorite, Mail, WhatsApp } from "@mui/icons-material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { Divider, Grid, Link } from "@mui/material";
+import { Divider, Grid, Link, Typography } from "@mui/material";
 import { useState } from "react";
 import "../App.css";
 import "../Assets/CSS/Footer.css";
+import "../Assets/CSS/Icon.css";
 import ModelPopup from "./ModelPopup";
 
 const Footer = () => {
@@ -29,10 +30,10 @@ const Footer = () => {
 
   const mailtoUrl = isMobile
     ? `mailto:${email}?subject=${encodeURIComponent(
-        subject
+        subject,
       )}&body=${encodeURIComponent(body)}`
     : `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
-        email
+        email,
       )}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   return (
     <Grid container className="footer">
@@ -63,10 +64,14 @@ const Footer = () => {
                 aria-label="Send an email to ashutoshbajpai512@gmail.com"
               >
                 <Mail
+                  className="glow-icon delay-1"
                   sx={{
                     color: "aqua",
+                    verticalAlign: "middle",
+                    mr: 1,
                   }}
-                  viewBox="2 0 22 18"
+                  // viewBox="2 0 22 18"
+                  fontSize="large"
                 />
                 ashutoshbajpai512@gmail.com
               </Link>
@@ -83,10 +88,13 @@ const Footer = () => {
                 <WhatsApp
                   sx={{
                     color: "aqua",
+                    verticalAlign: "middle",
+                    mr: 1,
                   }}
-                  viewBox="2 0 22 22"
+                  fontSize="large"
+                  className="glow-icon delay-2"
                 />
-                <span>+91 8299582099</span>
+                +91 8299582099
                 {open && <ModelPopup open={open} onClose={handleClose} />}
               </Link>
             </p>
@@ -126,10 +134,16 @@ const Footer = () => {
                 href="https://in.linkedin.com/in/ashutosh-bajpai-6b8baa152"
                 target="_blank"
               >
-                <LinkedInIcon fontSize="large" className="icon" />
+                <LinkedInIcon
+                  fontSize="large"
+                  className="icon glow-icon delay-3"
+                />
               </Link>
               <Link href="https://github.com/ashuBajpai999/" target="_blank">
-                <GitHubIcon fontSize="large" className="icon" />
+                <GitHubIcon
+                  fontSize="large"
+                  className="icon glow-icon delay-4"
+                />
               </Link>
             </p>
           </Grid>
@@ -160,7 +174,14 @@ const Footer = () => {
             className="footerText"
           >
             <p className="text">© 2025 @AshuTheWebDev - All rights reserved.</p>
-            <span className="name"> Ashutosh Bajpai ❤</span>
+            <Typography className="name">
+              Ashutosh Bajpai
+              <Favorite
+                fontSize="large"
+                sx={{ verticalAlign: "middle", ml: 1 }}
+                className=" glow-icon delay-5"
+              />
+            </Typography>
           </Grid>
         </Grid>
       </Grid>
