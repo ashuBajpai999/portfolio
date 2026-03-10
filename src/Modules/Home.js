@@ -1,14 +1,13 @@
+import { ArrowDownward } from "@mui/icons-material";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Button, Grid, Typography, useTheme } from "@mui/material";
-import { ArrowDownward } from "@mui/icons-material";
-import { getDownloadURL, ref } from "firebase/storage";
 import "../App.css";
-import { storage } from "../Components/Firebase";
-import img from "../image/ashutosh.webp";
 import "../Assets/CSS/Home.css";
+import img from "../image/ashutosh.webp";
+import { getFileUrl } from "../services/storageService";
 
 const Home = () => {
   const theme = useTheme();
@@ -37,16 +36,18 @@ const Home = () => {
     }
   };
 
-  const downloadCV = async () => {
+  const downloadCV = () => {
     try {
-      // Reference to the CV file in Firebase Storage
-      const cvRef = ref(storage, "ASHUTOSH BAJPAI.pdf"); // Ensure the path matches the one in your bucket
-
       // Get the download URL
-      const cvUrl = await getDownloadURL(cvRef);
+      const cvUrl = getFileUrl("cvStore", "ASHUTOSH_BAJPAI.pdf");
 
-      // Open the CV in a new tab
-      window.open(cvUrl, "_blank");
+      const link = window.document.createElement("a");
+      link.href = `${cvUrl}?download=Ashutosh_Bajpai_CV.pdf`;
+      link.download = "ASHUTOSH_BAJPAI.pdf";
+
+      window.document.body.appendChild(link);
+      link.click();
+      link.remove();
     } catch (error) {
       console.error("Error downloading CV:", error);
     }
@@ -103,7 +104,6 @@ const Home = () => {
               ></ArrowDownward>
             }
             sx={{
-              // backgroundColor: "aqua",
               "&:hover": {
                 backgroundColor: theme.palette.primary.main,
               },
