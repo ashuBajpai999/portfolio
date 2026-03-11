@@ -1,5 +1,7 @@
 import MenuIcon from "@mui/icons-material/Menu";
-import { Avatar, Link, Typography } from "@mui/material";
+import Link from "@mui/material/Link";
+import Typography from "@mui/material/Typography";
+import Avatar from "@mui/material/Avatar";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
@@ -12,7 +14,8 @@ import ListItemText from "@mui/material/ListItemText";
 import Toolbar from "@mui/material/Toolbar";
 import React, { Fragment } from "react";
 import "../App.css";
-import dp from "../image/ashutosh.webp";
+import dp from "../Assets/Images/ashutosh.webp";
+
 const drawerWidth = 170;
 const navItems = [
   { name: "Home", id: "" },

@@ -1,9 +1,12 @@
-import { Card, CardContent, CardMedia, Grid, Typography } from "@mui/material";
-import React from "react";
-import Graduation from "../image/Graduation.webp";
-import Highschool from "../image/Highschool.webp";
-import Intermediate from "../image/Intermediate.webp";
-import PostGraduation from "../image/PostGraduation.webp";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
+import Graduation from "../Assets/Images/Graduation.webp";
+import Highschool from "../Assets/Images/Highschool.webp";
+import Intermediate from "../Assets/Images/Intermediate.webp";
+import PostGraduation from "../Assets/Images/PostGraduation.webp";
 
 const Qualification = () => {
   const imageList = [
@@ -63,16 +66,16 @@ const Qualification = () => {
         </Typography>
       </Grid>
       <Grid item md={12} xs={12} sm={12}>
-        <Grid container justifyContent="center" columnGap={1} spacing={2} marginBottom={2}>
+        <Grid
+          container
+          justifyContent="center"
+          columnGap={1}
+          spacing={2}
+          marginBottom={2}
+        >
           {imageList.map((data, index) => {
             return (
-              <Grid
-                item
-                md={2.84}
-                xs={12}
-                sm={5.843}
-                key={index}
-              >
+              <Grid item md={2.84} xs={12} sm={5.843} key={index}>
                 <Card
                   sx={{
                     mr: { md: "1em", xs: "3em", sm: "1em" },

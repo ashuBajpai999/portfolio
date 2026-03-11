@@ -1,12 +1,15 @@
-import { ArrowDownward } from "@mui/icons-material";
+import ArrowDownward from "@mui/icons-material/ArrowDownward";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { Button, Grid, Typography, useTheme } from "@mui/material";
+import Button from "@mui/material/Button";
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
+import { useTheme } from "@mui/material/styles";
 import "../App.css";
 import "../Assets/CSS/Home.css";
-import img from "../image/ashutosh.webp";
+import img from "../Assets/Images/ashutosh.webp";
 import { getFileUrl } from "../services/storageService";
 
 const Home = () => {

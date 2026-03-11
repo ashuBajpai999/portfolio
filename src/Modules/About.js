@@ -1,4 +1,5 @@
-import { Grid, Typography } from "@mui/material";
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
 import { useEffect, useState } from "react";
 
 const About = () => {
@@ -41,16 +42,15 @@ const About = () => {
   );
   const desktopView = (
     <>
-      {mobileView} I also use{" "}
-      <span>Firebase</span> to implement real-time functionality and lightweight
-      backend services. My development workflow includes tools like{" "}
-      <span>Visual Studio</span>, <span>VS Code</span>, <span>Postman</span>,
-      and version control systems such as <span>Git</span>, <span>GitHub</span>,
-      and <span>TortoiseSVN</span> to maintain clean and collaborative
-      codebases. I earned my <span>Master of Computer Applications (MCA)</span>{" "}
-      in <span>2023</span>, and{" "}
-      <span>Bachelor of Computer Applications (BCA)</span> in <span>2019</span>,
-      both from{" "}
+      {mobileView} I also use <span>Firebase</span> to implement real-time
+      functionality and lightweight backend services. My development workflow
+      includes tools like <span>Visual Studio</span>, <span>VS Code</span>,{" "}
+      <span>Postman</span>, and version control systems such as <span>Git</span>
+      , <span>GitHub</span>, and <span>TortoiseSVN</span> to maintain clean and
+      collaborative codebases. I earned my{" "}
+      <span>Master of Computer Applications (MCA)</span> in <span>2023</span>,
+      and <span>Bachelor of Computer Applications (BCA)</span> in{" "}
+      <span>2019</span>, both from{" "}
       <span>Dr. Virendra Swarup Institute of Computer Studies, Kanpur</span>. I
       completed my <span>Intermediate</span> in <span>2016</span> and{" "}
       <span>High School</span> in <span>2014</span>. What excites me most is the
@@ -117,7 +117,8 @@ const About = () => {
               marginBottom: { md: 3, sm: 5, xs: 5 },
             }}
           >
-            {desktopView}{isMobile && (
+            {desktopView}
+            {isMobile && (
               <span onClick={toggleExpand} className="see-more-btn">
                 See Less
               </span>

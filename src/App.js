@@ -1,5 +1,6 @@
-import { Divider, Grid } from "@mui/material";
-import React, { Fragment } from "react";
+import Grid from "@mui/material/Grid";
+import Divider from "@mui/material/Divider";
+import { Fragment } from "react";
 import "./App.css";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";

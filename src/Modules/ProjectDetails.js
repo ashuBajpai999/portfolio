@@ -1,16 +1,14 @@
-import React, { useCallback } from "react";
-import FitnessCard from "../image/FitnessClub.webp";
-import AshutoshCard from "../image/AshutoshLogo.webp";
-import MygstCafeCard from "../image/myGSTcafe.webp";
-import {
-  Card,
-  CardContent,
-  CardMedia,
-  Grid,
-  Link,
-  Typography,
-} from "@mui/material";
+import Link from "@mui/material/Link";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
+import { useCallback } from "react";
 import "../App.css";
+import AshutoshCard from "../Assets/Images/AshutoshCard.webp";
+import FitnessCard from "../Assets/Images/FitnessClub.webp";
+import MygstCafeCard from "../Assets/Images/myGSTcafe.webp";
 
 const ProjectDetails = () => {
   const imageList = [
@@ -63,16 +61,16 @@ const ProjectDetails = () => {
         </Typography>
       </Grid>
       <Grid item md={12} xs={12} sm={12}>
-        <Grid container spacing={2} columnGap={1} justifyContent="center" marginBottom={2}>
+        <Grid
+          container
+          spacing={2}
+          columnGap={1}
+          justifyContent="center"
+          marginBottom={2}
+        >
           {imageList.map((data, index) => {
             return (
-              <Grid
-                item
-                md={3.5}
-                xs={12}
-                sm={5.843}
-                key={index}
-              >
+              <Grid item md={3.5} xs={12} sm={5.843} key={index}>
                 <Card
                   sx={{
                     mr: { md: "1em", xs: "3em", sm: "1em" },
