@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.cd33c8a6.css",
-    "main.js": "/portfolio/static/js/main.e92ded57.js",
+    "main.js": "/portfolio/static/js/main.2ec6b3eb.js",
     "static/js/154.a1e207f9.chunk.js": "/portfolio/static/js/154.a1e207f9.chunk.js",
     "static/media/FitnessClub.webp": "/portfolio/static/media/FitnessClub.ef4aabb768e2a7b0836c.webp",
     "static/media/ashutosh.webp": "/portfolio/static/media/ashutosh.5c2574b86e1cbf873309.webp",
     "static/media/myGSTcafe.webp": "/portfolio/static/media/myGSTcafe.9a386d579529d5832b58.webp",
     "static/media/PostGraduation.webp": "/portfolio/static/media/PostGraduation.7b9af52fef8fd6385a05.webp",
-    "static/media/AshutoshLogo.webp": "/portfolio/static/media/AshutoshLogo.60ad48712d0aa617c339.webp",
+    "static/media/AshutoshCard.webp": "/portfolio/static/media/AshutoshCard.c58281617584da9c16b3.webp",
     "static/media/Highschool.webp": "/portfolio/static/media/Highschool.9ba05277f3ec3bcf6380.webp",
     "static/media/Graduation.webp": "/portfolio/static/media/Graduation.7556e553a4836bdcbda5.webp",
     "static/media/Intermediate.webp": "/portfolio/static/media/Intermediate.76a06f02b9c999e13d20.webp",
     "index.html": "/portfolio/index.html",
     "main.cd33c8a6.css.map": "/portfolio/static/css/main.cd33c8a6.css.map",
-    "main.e92ded57.js.map": "/portfolio/static/js/main.e92ded57.js.map",
+    "main.2ec6b3eb.js.map": "/portfolio/static/js/main.2ec6b3eb.js.map",
     "154.a1e207f9.chunk.js.map": "/portfolio/static/js/154.a1e207f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cd33c8a6.css",
-    "static/js/main.e92ded57.js"
+    "static/js/main.2ec6b3eb.js"
   ]
 }
