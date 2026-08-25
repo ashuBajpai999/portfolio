@@ -80,9 +80,14 @@ const Home = () => {
               textAlign: "justify",
             }}
           >
-            "To secure a position in an organization that offers opportunities
-            for growth and advancement while also allowing me to utilize my
-            skills and experience to contribute to the success of the company,,
+            Full Stack .NET Developer with 3+ years of experience designing and
+            developing enterprise web applications using ASP.NET Core, ASP.NET
+            MVC, ASP.NET Web Forms, C#, React.js, Entity Framework, PostgreSQL,
+            and FirebirdSQL. Experienced in developing scalable backend APIs,
+            building reusable React components, database optimization, and
+            delivering production-ready business applications. Passionate about
+            clean architecture, performance optimization, and continuous
+            learning
           </Typography>
         </div>
         <div

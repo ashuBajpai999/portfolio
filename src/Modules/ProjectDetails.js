@@ -18,7 +18,7 @@ const ProjectDetails = () => {
       headingColor: "#5DB7FE",
       descriptionColor: "black",
       heading: "myGSTcafe",
-      link: "https://erpqa.mygstcafe.com/",
+      link: "https://books.mygstcafe.com/",
       description:
         "MyGSTcafe is the easiest Offline GST Return Filing Software. It helps to automate many calculations regarding the GST and file accurate returns. It can upload data from your excel sheets. It provides the one-click reconciliation facility. Presently I'm working on this project to develop the UI and create functioning between components",
     },
@@ -47,7 +47,18 @@ const ProjectDetails = () => {
     window.open(data.link, "_blank");
   }, []);
   return (
-    <Grid container id="Project" spacing={2}>
+    <Grid
+      container
+      id="Project"
+      spacing={2}
+      sx={{
+        background: {
+          md: "linear-gradient(90deg, #7FFFD4 0%, #BFFFEA 25%, #AFFFE4 50%, #fff 75%)",
+          xs: "linear-gradient(90deg, #d8faee 30%, #b2fde4 60%, #7FFFD4 100%)",
+          sm: "linear-gradient(90deg, #d8faee 30%, #b2fde4 60%, #7FFFD4 100%)",
+        },
+      }}
+    >
       <Grid item md={12} xs={12} sm={12}>
         <Typography
           sx={{
