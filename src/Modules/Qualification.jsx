@@ -52,7 +52,7 @@ const Qualification = () => {
     },
   ];
   return (
-    <Grid container spacing={2} columnGap={2} id="Qualification">
+    <Grid container spacing={2} columnGap={2} id="qualification">
       <Grid item md={12} xs={12} sm={12}>
         <Typography
           sx={{

@@ -1,0 +1,118 @@
+.portfolio-header {
+  background: black !important;
+  color: #ffffff !important;
+  box-shadow: none !important;
+  z-index: 20;
+}
+
+.header-toolbar {
+  width: min(93%, 1242px);
+  min-height: 76px !important;
+  margin: 0 auto;
+  /* padding-inline: clamp(1rem, 4vw, 4rem) !important; */
+  display: flex;
+  gap: 2rem;
+}
+
+.portfolio-brand {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: clamp(0.9rem, 1.2vw, 1rem);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  white-space: nowrap;
+}
+
+.portfolio-brand span {
+  color: #37d8e8;
+}
+
+.desktop-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: clamp(1rem, 2vw, 2rem);
+}
+
+.desktop-nav-link {
+  color: #aeb8c2;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition:
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.desktop-nav-link:hover {
+  color: #37d8e8;
+  transform: translateY(-1px);
+}
+
+.header-avatar {
+  width: 42px !important;
+  height: 42px !important;
+  border: 1px solid #37d8e8;
+  box-shadow: 0 0 20px rgba(55, 216, 232, 0.2);
+}
+
+.mobile-menu-button {
+  display: none !important;
+  color: #ffffff !important;
+}
+
+.mobile-drawer {
+  width: min(82vw, 320px);
+  background: #071014 !important;
+  color: #ffffff !important;
+  border-right: 1px solid rgba(55, 216, 232, 0.2);
+}
+
+.drawer-header {
+  min-height: 76px;
+  padding: 0 1rem 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.drawer-brand {
+  font-weight: 700 !important;
+  letter-spacing: 0.1em !important;
+}
+
+.drawer-brand span {
+  color: #37d8e8;
+}
+
+.mobile-nav-link {
+  padding: 1rem 1.5rem !important;
+  color: #d8e0e6 !important;
+}
+
+.mobile-nav-link:hover {
+  background: rgba(55, 216, 232, 0.08) !important;
+  color: #37d8e8 !important;
+}
+
+@media (max-width: 899.95px) {
+  .header-toolbar {
+    width: min(91%, 899.95px);
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .desktop-navigation {
+    display: none;
+  }
+
+  .mobile-menu-button {
+    display: inline-flex !important;
+  }
+
+  .portfolio-brand {
+    flex: 1;
+    text-align: center;
+  }
+}

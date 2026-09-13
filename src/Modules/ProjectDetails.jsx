@@ -49,7 +49,7 @@ const ProjectDetails = () => {
   return (
     <Grid
       container
-      id="Project"
+      id="project"
       spacing={2}
       sx={{
         background: {
@@ -63,7 +63,6 @@ const ProjectDetails = () => {
         <Typography
           sx={{
             textAlign: "center",
-            textDecoration: "underline",
             mt: 1,
           }}
           variant="h4"

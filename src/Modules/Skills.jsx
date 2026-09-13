@@ -8,7 +8,7 @@ const Skills = () => {
       sx={{
         backgroundColor: "lightcyan",
       }}
-      id="Skills"
+      id="skills"
     >
       <Grid item md={12} xs={12} sm={12}>
         <Typography

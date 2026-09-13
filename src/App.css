@@ -3,8 +3,8 @@
 }
 
 .main {
-  background-color: black;
-  row-gap: 100px;
+  background-color: skyblue;
+  /* row-gap: 100px; */
 }
 .main1 {
   color: aqua;

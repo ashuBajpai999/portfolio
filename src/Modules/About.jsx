@@ -71,13 +71,12 @@ const About = () => {
       sx={{
         backgroundColor: "cornsilk",
       }}
-      id="About"
+      id="about"
     >
       <Grid item md={12} xs={12} sm={12}>
         <Typography
           sx={{
             textAlign: "center",
-            textDecoration: "underline",
             mt: 2,
           }}
           variant="h4"
