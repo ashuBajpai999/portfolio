@@ -10,7 +10,7 @@ const Skills = () => {
       }}
       id="skills"
     >
-      <Grid item md={12} xs={12} sm={12}>
+      <Grid size={{ md: 12, xs: 12, sm: 12 }}>
         <Typography
           variant="h4"
           sx={{ textAlign: "center", textDecoration: "underline", mt: 2 }}
@@ -19,10 +19,7 @@ const Skills = () => {
         </Typography>
       </Grid>
       <Grid
-        item
-        md={12}
-        xs={12}
-        sm={12}
+        size={{ md: 12, xs: 12, sm: 12 }}
         className="skills"
         sx={{ ml: { md: "10vw", xs: 0 }, mr: { md: "10vw", xs: 3 } }}
       >

@@ -1,5 +1,5 @@
 .portfolio-header {
-  background: black !important;
+  background: transparent !important;
   color: #ffffff !important;
   box-shadow: none !important;
   z-index: 20;
@@ -68,6 +68,10 @@
   border-right: 1px solid rgba(55, 216, 232, 0.2);
 }
 
+.drawer-close-icon {
+  color: #ffffff !important;
+}
+
 .drawer-header {
   min-height: 76px;
   padding: 0 1rem 0 1.5rem;
@@ -94,6 +98,11 @@
 .mobile-nav-link:hover {
   background: rgba(55, 216, 232, 0.08) !important;
   color: #37d8e8 !important;
+}
+
+.menu-label > span {
+  font-weight: 700 !important;
+  font-size: 1rem !important;
 }
 
 @media (max-width: 899.95px) {

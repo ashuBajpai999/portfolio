@@ -42,14 +42,14 @@ const Footer = () => {
       )}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   return (
     <Grid container className="footer">
-      <Grid item xs={12} md={3.5} sm={5}>
+      <Grid size={{ md: 3.5, xs: 12, sm: 5 }}>
         <Grid
           container
           display="flex"
           justifyContent="space-evenly"
           alignItems="center"
         >
-          <Grid item xs={12}>
+          <Grid size={{ xs: 12 }}>
             <p
               className="contactMe name"
               style={{
@@ -107,9 +107,7 @@ const Footer = () => {
         </Grid>
       </Grid>
       <Grid
-        item
-        xs={8}
-        md={0.02}
+        size={{ md: 0.02, xs: 8 }}
         className={isMdScreen ? "verticalDivider" : "horizontalDivider"}
       >
         <Divider
@@ -117,14 +115,14 @@ const Footer = () => {
           variant={isMdScreen ? "fullWidth" : "middle"}
         />
       </Grid>
-      <Grid item xs={12} md={3.5} sm={12}>
+      <Grid size={{ md: 3.5, xs: 12, sm: 12 }}>
         <Grid
           container
           display="flex"
           justifyContent="space-evenly"
           alignItems="center"
         >
-          <Grid item xs={12}>
+          <Grid size={{ xs: 12 }}>
             <p
               className="socialAddress name"
               style={{
@@ -155,9 +153,7 @@ const Footer = () => {
         </Grid>
       </Grid>
       <Grid
-        item
-        xs={10}
-        md={0.02}
+        size={{ md: 0.02, xs: 10 }}
         className={isMdScreen ? "verticalDivider" : "horizontalDivider"}
       >
         <Divider
@@ -165,7 +161,7 @@ const Footer = () => {
           variant={isMdScreen ? "fullWidth" : "middle"}
         />
       </Grid>
-      <Grid item xs={12} md={3.5} sm={12}>
+      <Grid size={{ md: 3.5, xs: 12, sm: 12 }}>
         <Grid
           container
           display="flex"
@@ -173,8 +169,7 @@ const Footer = () => {
           alignItems="center"
         >
           <Grid
-            item
-            xs={12}
+            size={{ xs: 12 }}
             sx={{ textAlign: "center" }}
             className="footerText"
           >

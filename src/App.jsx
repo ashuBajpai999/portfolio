@@ -14,10 +14,10 @@ function App() {
   return (
     <Fragment>
       <Grid container className="main">
-        <Grid item md={12} xs={12} sm={12}>
+        <Grid size={{ md: 12, xs: 12, sm: 12 }}>
           <Header />
         </Grid>
-        <Grid item md={12} xs={12} sm={12}>
+        <Grid size={{ md: 12, xs: 12, sm: 12 }}>
           <Home />
         </Grid>
       </Grid>

@@ -53,7 +53,7 @@ const Qualification = () => {
   ];
   return (
     <Grid container spacing={2} columnGap={2} id="qualification">
-      <Grid item md={12} xs={12} sm={12}>
+      <Grid size={{ md: 12, xs: 12, sm: 12 }}>
         <Typography
           sx={{
             textAlign: "center",
@@ -65,7 +65,7 @@ const Qualification = () => {
           Qualification Details
         </Typography>
       </Grid>
-      <Grid item md={12} xs={12} sm={12}>
+      <Grid size={{ md: 12, xs: 12, sm: 12 }}>
         <Grid
           container
           justifyContent="center"
@@ -75,7 +75,7 @@ const Qualification = () => {
         >
           {imageList.map((data, index) => {
             return (
-              <Grid item md={2.84} xs={12} sm={5.843} key={index}>
+              <Grid size={{ md: 2.84, xs: 12, sm: 5.843 }} key={index}>
                 <Card
                   sx={{
                     mr: { md: "1em", xs: "3em", sm: "1em" },
