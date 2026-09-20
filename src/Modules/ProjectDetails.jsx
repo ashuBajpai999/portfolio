@@ -59,7 +59,7 @@ const ProjectDetails = () => {
         },
       }}
     >
-      <Grid item md={12} xs={12} sm={12}>
+      <Grid size={{ md: 12, xs: 12, sm: 12 }}>
         <Typography
           sx={{
             textAlign: "center",
@@ -70,7 +70,7 @@ const ProjectDetails = () => {
           Project Details
         </Typography>
       </Grid>
-      <Grid item md={12} xs={12} sm={12}>
+      <Grid size={{ md: 12, xs: 12, sm: 12 }}>
         <Grid
           container
           spacing={2}
@@ -80,7 +80,7 @@ const ProjectDetails = () => {
         >
           {imageList.map((data, index) => {
             return (
-              <Grid item md={3.5} xs={12} sm={5.843} key={index}>
+              <Grid size={{ md: 3.5, xs: 12, sm: 5.843 }} key={index}>
                 <Card
                   sx={{
                     mr: { md: "1em", xs: "3em", sm: "1em" },

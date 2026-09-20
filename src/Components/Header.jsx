@@ -91,7 +91,11 @@ const Header = (props) => {
             ASHUTOSH <span>BAJPAI</span>
           </Typography>
 
-          <IconButton onClick={toggleDrawer} aria-label="Close navigation menu">
+          <IconButton
+            className="drawer-close-icon"
+            onClick={toggleDrawer}
+            aria-label="Close navigation menu"
+          >
             <CloseIcon />
           </IconButton>
         </Box>
@@ -104,7 +108,7 @@ const Header = (props) => {
               onClick={handleNavigation}
               className="mobile-nav-link"
             >
-              <ListItemText primary={item.name} />
+              <ListItemText primary={item.label} className="menu-label" />
             </ListItemButton>
           ))}
         </List>

@@ -73,7 +73,7 @@ const About = () => {
       }}
       id="about"
     >
-      <Grid item md={12} xs={12} sm={12}>
+      <Grid size={{ md: 12, xs: 12, sm: 12 }}>
         <Typography
           sx={{
             textAlign: "center",
@@ -84,7 +84,7 @@ const About = () => {
           About Me
         </Typography>
       </Grid>
-      <Grid item md={12} xs={12} sm={12}>
+      <Grid size={{ md: 12, xs: 12, sm: 12 }}>
         {isMobile && !isExpanded ? (
           <Typography
             textAlign="center"
